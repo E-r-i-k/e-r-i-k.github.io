@@ -1,0 +1,150 @@
+/* Dark Theme with Flexible Table Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 1em;
+}
+
+.salary-stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.salary-stats p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.table-container {
+    overflow-x:visible;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color:   #e0e0e0;
+    font-size: 0.6em;
+    table-layout:fixed; /* Allow for flexible widths */
+    text-wrap:wrap; /* Allow wrapping of text */
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    white-space: normal; /* Allow wrapping of text */
+}
+
+thead th {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+th input, th select {
+    background-color: #333;
+    border: none;
+    padding: 5px;
+    color: #e0e0e0;
+    width: 100%;
+    font-size: 0.8em;
+    border-radius: 4px;
+    white-space: normal; /* Allow wrapping of text */
+}
+
+.select-items {
+    width:auto
+}
+
+tbody tr:hover {
+    background-color: #333;
+}
+
+.job-link {
+    color: #03dac6;
+    text-decoration: none;
+}
+
+.job-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Flexible column widths */
+th:nth-child(1), td:nth-child(1) { width: 10%; }   /* Job Title */
+th:nth-child(2), td:nth-child(2) { width: 10%; }   /* Company */
+th:nth-child(3), td:nth-child(3) { width: 10%; }   /* Location */
+th:nth-child(4), td:nth-child(4) { width: 5%; }   /* Salary */
+th:nth-child(5), td:nth-child(5) { width: 5%; }   /* Job Type */
+th:nth-child(6), td:nth-child(6) { width: 5%; }   /* Experience Level */
+th:nth-child(7), td:nth-child(7) { width: 5%; }    /* Employment Type */
+th:nth-child(8), td:nth-child(8) { width: 5%; }    /* Work Arrangement */
+th:nth-child(9), td:nth-child(9) { width: 6%; }    /* Date Posted */
+th:nth-child(10), td:nth-child(10) { width: 5%; }  /* Link */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    .salary-stats p {
+        font-size: 0.4em;
+    }
+
+    /* Stack table headers and data vertically */
+    tr {
+        margin-bottom: 10px; /* Add some space between rows */
+    }
+
+    table {
+        font-size: 0.5em;
+    }
+
+    th {
+        display:flexbox;
+        padding: 2px;
+        font-size: 0.4em;
+    }
+
+    td {
+        display:flexbox;
+        justify-content: space-between;
+        padding: 2px;
+        overflow-wrap: break-word; /* Ensure compatibility with modern browsers */
+    }
+
+    input[type="text"], 
+    input[type="select"],
+    select {
+        height: 20px; /* Adjust height */
+        padding: 1px; /* Adjust padding */
+        font-size: 0.5em; /* Scale down font size */
+        border-radius: 4px; /* Rounded corners */
+        box-sizing:border-box /* Include padding in width/height */
+    }
+}
