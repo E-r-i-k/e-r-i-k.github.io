@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const salaries = jobData.map(job => job.salary).filter(salary => salary !== null && salary !== 'null');
     
         // Convert salaries to numbers and filter out non-numeric values
-        const salaryNumbers = salaries.map(salary => parseFloat(salary.replace(/[^0-9.-]+/g, ""))/1000).filter(num => !isNaN(num));
+        const salaryNumbers = salaries.map(salary => parseFloat(salary.replace(/[^0-9.-]+/g, "")) / 1000).filter(num => !isNaN(num));
     
         if (salaryNumbers.length === 0) {
             console.log("No valid salaries found to create a histogram.");
@@ -129,14 +129,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     
         // Determine the min and max salaries
-        const minSalary = Math.min(...salaryNumbers);
         const maxSalary = Math.max(...salaryNumbers);
-        
-        const binCount = 30; // You can adjust this to have more or fewer bins
+        const minSalary = 0;
+    
+        let binCount = Math.max(10,Math.min(salaryNumbers.length, 30)); // You can adjust this to have more or fewer bins
         const binSize = (maxSalary - minSalary) / binCount;
     
-        // Create bins
+        // Create bins, including the upper limit of the last bin
         const bins = Array.from({ length: binCount + 1 }, (_, i) => minSalary + i * binSize);
+        
+        // Ensure the last bin goes all the way to maxSalary
+        bins[bins.length - 1] = maxSalary; 
     
         // Initialize histogram data
         const histogramData = new Array(binCount).fill(0);
@@ -146,8 +149,12 @@ document.addEventListener("DOMContentLoaded", () => {
             for (let i = 0; i < bins.length - 1; i++) {
                 if (salary >= bins[i] && salary < bins[i + 1]) {
                     histogramData[i]++;
-                    break; // Stop after placing the salary in the right bin
+                    return; // Stop after placing the salary in the right bin
                 }
+            }
+            // Handle case where salary is equal to max salary
+            if (salary === maxSalary) {
+                histogramData[histogramData.length - 1]++;
             }
         });
     
@@ -161,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
         salaryChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: bins.slice(0, -1).map((bin, index) => 
+                labels: bins.slice(0, -1).map((bin, index) =>
                     `${bin.toFixed(0)}k - ${bins[index + 1].toFixed(0)}k`
                 ),
                 datasets: [{
@@ -175,6 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
             options: {
                 scales: {
                     x: {
+                        beginAtZero: true,
                         title: {
                             display: false,
                             text: 'Salary Ranges'
@@ -193,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+    
     
 
     function filterJobs(jobs) {

@@ -34,7 +34,7 @@ h1 {
 
 .salary-stats p {
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .table-container {
@@ -46,7 +46,7 @@ table {
     border-collapse: collapse;
     background-color: #1e1e1e;
     color:   #e0e0e0;
-    font-size: 0.6em;
+    font-size: 1em;
     table-layout:fixed; /* Allow for flexible widths */
     text-wrap:wrap; /* Allow wrapping of text */
 }
