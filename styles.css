@@ -6,6 +6,47 @@
     font-family: Arial, sans-serif;
 }
 
+header {
+    background-color: #1e1e1e; /* Light background for the header */
+    padding: 10px; /* Padding around the header */
+    text-align: left; /* Center-align the text */
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+}
+
+header nav {
+    margin-top: 5px; /* Space between title and nav */
+}
+
+header a {
+    color: #03dac6; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center-align icon and text vertically */
+}
+
+header a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #7dfff2;
+}
+
+.github-icon {
+    filter: invert(1); /* Invert colors */
+    width: 20px; /* Set your desired width */
+    height: 20px; /* Set your desired height */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.ai-icon-container {
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Adjust this value based on your header height */
+    right: 20px; /* Distance from the right */
+}
+
+.ai-icon-container img {
+    width: 30px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 body {
     background-color: #121212;
     color: #e0e0e0;
@@ -23,6 +64,12 @@ h1 {
     margin-bottom: 1em;
 }
 
+.invert-icon {
+    filter: invert(1); /* Invert colors */
+    margin-left: 5px; /* Space between title and icon */
+    vertical-align: middle; /* Align icon vertically with text */
+}
+
 .salary-stats {
     display: flex;
     justify-content: space-between;
@@ -30,12 +77,55 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 1em;
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
 }
 
 .salary-stats p {
     margin: 0;
     font-size: 1em;
 }
+
+/* Styling for the filter container */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+}
+
+/* Consistent width for inputs and selects */
+.filter-container input[type="text"],
+.filter-container select {
+    width: 180px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Styling for the reset button */
+#reset-filters {
+    padding: 6px 12px;
+    background-color: #03dac6;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hover effect for reset button */
+#reset-filters:hover {
+    background-color: #7dfff2;
+    color: black;
+}
+
+.select-items {
+    width:auto
+}
+
 
 .table-container {
     overflow-x:visible;
@@ -46,7 +136,7 @@ table {
     border-collapse: collapse;
     background-color: #1e1e1e;
     color:   #e0e0e0;
-    font-size: 1em;
+    font-size: 0.9em;
     table-layout:fixed; /* Allow for flexible widths */
     text-wrap:wrap; /* Allow wrapping of text */
 }
@@ -56,6 +146,7 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #333;
     white-space: normal; /* Allow wrapping of text */
+    word-wrap: break-word;
 }
 
 thead th {
@@ -63,21 +154,13 @@ thead th {
     position: sticky;
     top: 0;
     z-index: 1;
+    font-size: 0.9em;
+    cursor: pointer; /* Change cursor to pointer */
+    user-select: none; /* Prevent text selection */
 }
 
-th input, th select {
-    background-color: #333;
-    border: none;
-    padding: 5px;
-    color: #e0e0e0;
-    width: 100%;
-    font-size: 0.8em;
-    border-radius: 4px;
-    white-space: normal; /* Allow wrapping of text */
-}
-
-.select-items {
-    width:auto
+header th:hover {
+    background-color: #555; /* Optional: Change background color on hover */
 }
 
 tbody tr:hover {
@@ -90,6 +173,7 @@ tbody tr:hover {
 }
 
 .job-link:hover {
+    color: #7dfff2;
     text-decoration: underline;
 }
 
@@ -98,14 +182,13 @@ tbody tr:hover {
 /* Flexible column widths */
 th:nth-child(1), td:nth-child(1) { width: 10%; }   /* Job Title */
 th:nth-child(2), td:nth-child(2) { width: 10%; }   /* Company */
-th:nth-child(3), td:nth-child(3) { width: 10%; }   /* Location */
+th:nth-child(3), td:nth-child(3) { width: 7%; }   /* Location */
 th:nth-child(4), td:nth-child(4) { width: 5%; }   /* Salary */
 th:nth-child(5), td:nth-child(5) { width: 5%; }   /* Job Type */
 th:nth-child(6), td:nth-child(6) { width: 5%; }   /* Experience Level */
 th:nth-child(7), td:nth-child(7) { width: 5%; }    /* Employment Type */
 th:nth-child(8), td:nth-child(8) { width: 5%; }    /* Work Arrangement */
-th:nth-child(9), td:nth-child(9) { width: 6%; }    /* Date Posted */
-th:nth-child(10), td:nth-child(10) { width: 5%; }  /* Link */
+th:nth-child(9), td:nth-child(9) { width: 5%; }    /* Date Posted */
 
 @media (max-width: 768px) {
     h1 {
@@ -138,13 +221,20 @@ th:nth-child(10), td:nth-child(10) { width: 5%; }  /* Link */
         overflow-wrap: break-word; /* Ensure compatibility with modern browsers */
     }
 
-    input[type="text"], 
-    input[type="select"],
-    select {
+    .filter-container input[type="text"], 
+    .filter-container input[type="select"],
+    .filter-container select,
+    #reset-filters {
         height: 20px; /* Adjust height */
         padding: 1px; /* Adjust padding */
         font-size: 0.5em; /* Scale down font size */
         border-radius: 4px; /* Rounded corners */
         box-sizing:border-box /* Include padding in width/height */
+    }
+    .filter-container p
+    {
+        font-size: 0.5em; /* Scale down font size */
+        line-height: 20px; /* Set line height equal to the height of the input */
+        margin: 0; /* Remove default margin */
     }
 }

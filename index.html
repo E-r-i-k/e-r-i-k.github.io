@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Listings</title>
+    <title>e-r-i-k.github.io</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="https://github.com/E-r-i-k" target="_blank">
+                <img src="github-icon.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;" class="github-icon">
+                GitHub Profile
+            </a>
+        </nav>
+    </header>
+    <div class="ai-icon-container">
+        <img src="ai-icon.svg" alt="Powered by A.I." title="Powered by A.I." style="width: 50px; height: 50px"  class="invert-icon">
+    </div>
     <div class="container">
-        <h1>Job Listings</h1>
+        <h1>Seek Software Job Listings</h1>
 
         <div>
             <canvas id="salaryHistogram" width="400" height="400"></canvas>
@@ -24,66 +34,58 @@
             <p>Median Salary: <span id="median-salary">N/A</span></p>
         </div>
 
+        <div class="filter-container">
+            <input type="text" id="title-filter" placeholder="Job Title Filter">
+            <input type="text" id="company-filter" placeholder="Company Filter">
+            <input type="text" id="location-filter" placeholder="Location Filter">
+            <input type="text" id="salary-filter" placeholder="Min Salary">
+            <input type="text" id="max-salary-filter" placeholder="Max Salary">
+            <select id="job-type-filter">
+                <option value="">All Job Types</option>
+            </select>
+            <select id="experience-filter">
+                <option value="">All Experience Levels</option>
+            </select>
+            <select id="employment-type-filter">
+                <option value="">All Employment Types</option>
+            </select>
+            <select id="work-arrangement-filter">
+                <option value="">All Work Arrangements</option>
+            </select>
+            <select id="date-filter">
+                <option value="">All Dates</option>
+                <option value="7">Last 7 days</option>
+                <option value="14">Last 14 days</option>
+                <option value="30">Last 30 days</option>
+                <option value="90">Last 90 days</option>
+                <option value="180">Last 180 days</option>
+                <option value="365">Last 365 days</option>
+            </select>
+            <button id="reset-filters">Reset Filters</button>
+        
+            <p id="job-count"></p> <!-- New job count display -->
+        </div>
+        
         <!-- Job Listings Table -->
         <div class="table-container">
             <table id="job-listings-table">
-                <thead>
+                <thead> 
                     <tr>
-                        <th>Job Title</th>
-                        <th>Company</th>
-                        <th>Location</th>
-                        <th>Salary</th>
-                        <th>Job Type</th>
-                        <th>Level</th>
-                        <th>Employment Type</th>
-                        <th>Work Arrangement</th>
-                        <th>Date Posted</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <thead>
-                    <tr>
-                        <th><input type="text" id="title-filter" placeholder="Job Title Filter"></th>
-                        <th><input type="text" id="company-filter" placeholder="Company Filter"></th>
-                        <th><input type="text" id="location-filter" placeholder="Location Filter"></th>
-                        <th><input type="text" id="salary-filter" placeholder="Min Salary"></th>
-                        <th>
-                            <select id="job-type-filter">
-                                <option value="">All</option>
-                            </select>
-                        </th>
-                        <th>
-                            <select id="experience-filter">
-                                <option value="">All</option>
-                            </select>
-                        </th>
-                        <th>
-                            <select id="employment-type-filter">
-                                <option value="">All</option>
-                            </select>
-                        </th>
-                        <th>
-                            <select id="work-arrangement-filter">
-                                <option value="">All</option>
-                            </select>
-                        </th>
-                        <th>
-                            <select id="date-filter">
-                                <option value="">All</option>
-                                <option value="7">Last 7 days</option>
-                                <option value="14">Last 14 days</option>
-                                <option value="30">Last 30 days</option>
-                                <option value="90">Last 90 days</option>
-                                <option value="180">Last 180 days</option>
-                                <option value="365">Last 365 days</option>
-                            </select>
-                        </th>
-                        <th></th>
+                        <th>Job Title <span class="sort-arrow"></span></th>
+                        <th>Company <span class="sort-arrow"></span></th>
+                        <th>Location <span class="sort-arrow"></span></th>
+                        <th>Salary <span class="sort-arrow"></span></th>
+                        <th>Job Type <span class="sort-arrow"></span></th>
+                        <th>Experience Level <span class="sort-arrow"></span></th>
+                        <th>Employment Type <span class="sort-arrow"></span></th>
+                        <th>Work Arrangement <span class="sort-arrow"></span></th>
+                        <th>Date Posted <span class="sort-arrow"></span></th>
                     </tr>
                 </thead>
                 <tbody id="job-listings"></tbody>
             </table>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

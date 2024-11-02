@@ -1,9 +1,15 @@
+
+let salaryChart; // Variable to hold the chart instance
+let currentSortColumnIndex = null; // Track which column is sorted
+let currentSortOrder = 'asc'; // Track current sort order
+
 document.addEventListener("DOMContentLoaded", () => {
     const jobListings = document.getElementById('job-listings');
     const titleFilter = document.getElementById('title-filter');
     const companyFilter = document.getElementById('company-filter');
     const locationFilter = document.getElementById('location-filter');
     const salaryFilter = document.getElementById('salary-filter');
+    const maxSalaryFilter = document.getElementById('max-salary-filter');
     const jobTypeFilter = document.getElementById('job-type-filter');
     const experienceFilter = document.getElementById('experience-filter');
     const employmentTypeFilter = document.getElementById('employment-type-filter');
@@ -15,25 +21,51 @@ document.addEventListener("DOMContentLoaded", () => {
     const averageSalaryElem = document.getElementById('average-salary');
     const medianSalaryElem = document.getElementById('median-salary');
 
+    const resetButton = document.getElementById('reset-filters'); // Get reset button
+
+    const table = document.getElementById("job-listings-table");
+    const headers = table.querySelectorAll("th");
+
+    headers.forEach((header, index) => {
+        header.addEventListener("click", () => {
+            sortTable(index);
+        });
+    });
+
     // Fetch job data from JSON
     fetch('jobs.json')
         .then(response => response.json())
         .then(jobs => {
             populateFilters(jobs);
-            displayJobs(jobs);
-            calculateSalaryStats(jobs);
-            createSalaryHistogram(jobs)
+            filterJobs(jobs);
 
             // Add event listeners for filtering
             titleFilter.addEventListener("input", () => filterJobs(jobs));
             companyFilter.addEventListener("input", () => filterJobs(jobs));
             locationFilter.addEventListener("input", () => filterJobs(jobs));
             salaryFilter.addEventListener("input", () => filterJobs(jobs));
+            maxSalaryFilter.addEventListener("input", () => filterJobs(jobs));
             jobTypeFilter.addEventListener("change", () => filterJobs(jobs));
             experienceFilter.addEventListener("change", () => filterJobs(jobs));
             employmentTypeFilter.addEventListener("change", () => filterJobs(jobs));
             workArrangementFilter.addEventListener("change", () => filterJobs(jobs));
             dateFilter.addEventListener("change", () => filterJobs(jobs));
+
+            // Add event listener for reset button
+            resetButton.addEventListener('click', () => {
+                titleFilter.value = '';
+                companyFilter.value = '';
+                locationFilter.value = '';
+                salaryFilter.value = '';
+                jobTypeFilter.value = '';
+                experienceFilter.value = '';
+                employmentTypeFilter.value = '';
+                workArrangementFilter.value = '';
+                dateFilter.value = '';
+
+                // Re-display all jobs and reset salary stats and histogram
+                filterJobs(jobs);
+            });
         });
 
     // Populate filter options based on unique attributes in job data
@@ -57,12 +89,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function populateDropdown(dropdown, items) {
-        items.forEach(item => {
-            const option = document.createElement("option");
-            option.value = item;
-            option.textContent = item;
-            dropdown.appendChild(option);
-        });
+        // Convert Set to Array, sort alphabetically, then add to dropdown
+        Array.from(items)
+            .sort((a, b) => a.localeCompare(b))
+            .forEach(item => {
+                const option = document.createElement("option");
+                option.value = item;
+                option.textContent = item;
+                dropdown.appendChild(option);
+            });
     }
 
     // Function to format the date to YYYY-MM-DD
@@ -71,12 +106,13 @@ document.addEventListener("DOMContentLoaded", () => {
         return new Date(date).toLocaleDateString('en-CA', options); // 'en-CA' gives format YYYY-MM-DD
     }
 
+    
     function displayJobs(jobs) {
         jobListings.innerHTML = '';  // Clear existing jobs
         jobs.forEach(job => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${job.job_title}</td>
+                <td><a href="${job.link}" target="_blank" class="job-link">${job.job_title}</a></td>
                 <td>${job.company}</td>
                 <td>${job.location}</td>
                 <td>${job.salary}</td>
@@ -85,7 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td>${job.employment_type}</td>
                 <td>${job.work_arrangement}</td>
                 <td>${formatDate(job.date_posted)}</td>
-                <td><a href="${job.link}" target="_blank" class="job-link">View Job</a></td>
             `;
             jobListings.appendChild(row);
         });
@@ -114,8 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const middle = Math.floor(values.length / 2);
         return values.length % 2 !== 0 ? values[middle] : ((values[middle - 1] + values[middle]) / 2).toFixed(2);
     }
-
-    let salaryChart; // Variable to hold the chart instance
 
     function createSalaryHistogram(jobData) {
         const salaries = jobData.map(job => job.salary).filter(salary => salary !== null && salary !== 'null');
@@ -191,16 +224,69 @@ document.addEventListener("DOMContentLoaded", () => {
                     y: {
                         beginAtZero: true,
                         title: {
-                            display: false,
+                            display: true,
                             text: 'Number of Jobs'
                         }
                     }
                 },
                 responsive: true,
-                maintainAspectRatio: false
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false // Remove the legend
+                    }
+                }
             }
         });
     }
+
+
+    function sortTable(columnIndex, toggle = true) {
+        const tbody = table.querySelector("tbody");
+        const rows = Array.from(tbody.querySelectorAll("tr"));
+    
+        // Determine the new sort order
+        if (toggle)
+            currentSortOrder = tbody.dataset.sortOrder === "asc" ? "desc" : "asc";
+        tbody.dataset.sortOrder = currentSortOrder; // Update to the new sort order
+        currentSortColumnIndex = columnIndex; // Update the current sort column index
+    
+        const isNumericColumn = columnIndex === 3; // Salary column index
+        const isDateColumn = columnIndex === 8; // Date Posted column index
+    
+        // Sort the rows based on the column index
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.cells[columnIndex].innerText || "0"; // Fallback to "0" for empty cells
+            const cellB = rowB.cells[columnIndex].innerText || "0";
+    
+            if (isNumericColumn) {
+                const numA = parseFloat(cellA.replace(/[^0-9.-]+/g, '')) || 0; // Convert to number, treat non-numeric as 0
+                const numB = parseFloat(cellB.replace(/[^0-9.-]+/g, '')) || 0;
+                return currentSortOrder === "asc" ? numA - numB : numB - numA;
+            } else if (isDateColumn) {
+                const dateA = new Date(cellA);
+                const dateB = new Date(cellB);
+                return currentSortOrder === "asc" ? dateA - dateB : dateB - dateA;
+            } else {
+                return currentSortOrder === "asc" ? cellA.localeCompare(cellB) : cellB.localeCompare(cellA);
+            }
+        });
+    
+        // Append sorted rows back to the tbody
+        rows.forEach(row => tbody.appendChild(row));
+    
+        // Clear existing arrows from all headers
+        const arrows = table.querySelectorAll(".sort-arrow");
+        arrows.forEach(arrow => arrow.innerHTML = ''); // Clear all arrows
+    
+        // Add arrow to the currently sorted column
+        const currentArrow = table.querySelector(`th:nth-child(${columnIndex + 1}) .sort-arrow`);
+        currentArrow.innerHTML = currentSortOrder === "asc" ? " &#x25B2;" : " &#x25BC;"; // Add current sort arrow
+    }
+    
+
+    
+    
     
     
 
@@ -208,33 +294,50 @@ document.addEventListener("DOMContentLoaded", () => {
         const titleValue = titleFilter.value.toLowerCase();
         const companyValue = companyFilter.value.toLowerCase();
         const locationValue = locationFilter.value.toLowerCase();
-        const salaryValue = salaryFilter.value;
+        const salaryValue = salaryFilter.value ? parseFloat(salaryFilter.value) : null;
+        const maxSalaryValue = maxSalaryFilter.value ? parseFloat(maxSalaryFilter.value) : null;
         const jobTypeValue = jobTypeFilter.value;
         const experienceValue = experienceFilter.value;
         const employmentTypeValue = employmentTypeFilter.value;
         const workArrangementValue = workArrangementFilter.value;
         const daysAgo = dateFilter.value ? parseInt(dateFilter.value) : null;
         const now = new Date();
-
+    
         const filteredJobs = jobs.filter(job => {
+            // Parse job date to calculate the days difference
             const jobDate = new Date(job.date_posted);
             const daysDifference = (now - jobDate) / (1000 * 60 * 60 * 24);
-
+    
             const matchesTitle = job.job_title.toLowerCase().includes(titleValue);
             const matchesCompany = job.company.toLowerCase().includes(companyValue);
             const matchesLocation = job.location.toLowerCase().includes(locationValue);
             const matchesJobType = !jobTypeValue || job.job_type === jobTypeValue;
-            const matchesSalary = !salaryValue || job.salary >= salaryValue;
             const matchesExperience = !experienceValue || job.experience_level === experienceValue;
             const matchesEmploymentType = !employmentTypeValue || job.employment_type === employmentTypeValue;
             const matchesWorkArrangement = !workArrangementValue || job.work_arrangement === workArrangementValue;
+            const matchesMinSalary = !salaryValue || job.salary >= salaryValue;
+            const matchesMaxSalary = !maxSalaryValue || job.salary <= maxSalaryValue;
+    
+            // Match jobs within the selected date range or show all if no range is selected
             const matchesDate = !daysAgo || daysDifference <= daysAgo;
-
-            return matchesTitle && matchesCompany && matchesLocation && matchesSalary && matchesJobType && matchesExperience && matchesEmploymentType && matchesWorkArrangement && matchesDate;
+    
+            return matchesTitle && matchesCompany && matchesLocation &&
+                   matchesMinSalary && matchesMaxSalary && matchesJobType &&
+                   matchesExperience && matchesEmploymentType &&
+                   matchesWorkArrangement && matchesDate;
         });
-
+    
+        // Update display and stats with filtered results
         displayJobs(filteredJobs);
         calculateSalaryStats(filteredJobs);
-        createSalaryHistogram(filteredJobs)
+        createSalaryHistogram(filteredJobs);
+
+        const jobCountElem = document.getElementById('job-count');
+        jobCountElem.textContent = `Showing ${filteredJobs.length} of ${jobs.length} jobs`;
+
+        // Reapply sorting if there was a previous sort action
+        if (currentSortColumnIndex !== null) 
+            sortTable(currentSortColumnIndex, false);
     }
+    
 });
