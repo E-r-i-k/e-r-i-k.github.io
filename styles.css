@@ -81,9 +81,10 @@ h1 {
 }
 
 .salary-stats p {
-    margin: 0;
+    margin: 5px;
     font-size: 1em;
 }
+
 
 /* Styling for the filter container */
 .filter-container {
@@ -91,22 +92,42 @@ h1 {
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: #1e1e1e;
 }
 
+#salary-estimate-filter {
+    width: auto; /* Let the checkbox be as small as needed */
+}
+
+#job-count {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+}
+
 /* Consistent width for inputs and selects */
-.filter-container input[type="text"],
+.filter-container input,
 .filter-container select {
-    width: 180px;
+    width: calc(20% - 10px);  /* Adjust width to account for the gap */
+    gap: 10px;
     padding: 5px;
     font-size: 14px;
+    box-sizing: border-box;  /* Include padding/border in width */
+}
+
+.checkbox-container {
+    width: 100%; /* Ensure checkbox and text take up full width */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between the checkbox and text */
+    justify-content: flex-start; /* Align text and checkbox to the left */
 }
 
 /* Styling for the reset button */
 #reset-filters {
+    width: 100%;
     padding: 6px 12px;
     background-color: #03dac6;
     color: black;
@@ -184,11 +205,12 @@ th:nth-child(1), td:nth-child(1) { width: 10%; }   /* Job Title */
 th:nth-child(2), td:nth-child(2) { width: 10%; }   /* Company */
 th:nth-child(3), td:nth-child(3) { width: 7%; }   /* Location */
 th:nth-child(4), td:nth-child(4) { width: 5%; }   /* Salary */
-th:nth-child(5), td:nth-child(5) { width: 5%; }   /* Job Type */
-th:nth-child(6), td:nth-child(6) { width: 5%; }   /* Experience Level */
-th:nth-child(7), td:nth-child(7) { width: 5%; }    /* Employment Type */
-th:nth-child(8), td:nth-child(8) { width: 5%; }    /* Work Arrangement */
-th:nth-child(9), td:nth-child(9) { width: 5%; }    /* Date Posted */
+th:nth-child(5), td:nth-child(5) { width: 3%; }   /* Estimated */
+th:nth-child(6), td:nth-child(6) { width: 5%; }   /* Job Type */
+th:nth-child(7), td:nth-child(7) { width: 5%; }   /* Experience Level */
+th:nth-child(8), td:nth-child(8) { width: 6%; }    /* Employment Type */
+th:nth-child(9), td:nth-child(9) { width: 5%; }    /* Work Arrangement */
+th:nth-child(10), td:nth-child(10) { width: 5%; }    /* Date Posted */
 
 @media (max-width: 768px) {
     h1 {
@@ -221,20 +243,29 @@ th:nth-child(9), td:nth-child(9) { width: 5%; }    /* Date Posted */
         overflow-wrap: break-word; /* Ensure compatibility with modern browsers */
     }
 
-    .filter-container input[type="text"], 
-    .filter-container input[type="select"],
-    .filter-container select,
-    #reset-filters {
-        height: 20px; /* Adjust height */
-        padding: 1px; /* Adjust padding */
+    .filter-container
+    {
+        gap: 1px; /* Space between inputs */
+    }
+ 
+    .filter-container input,
+    .filter-container select
+    {
+        gap: calc(25% - 1px); /* Space between inputs */
         font-size: 0.5em; /* Scale down font size */
-        border-radius: 4px; /* Rounded corners */
+        border-radius: 5px; /* Rounded corners */
         box-sizing:border-box /* Include padding in width/height */
     }
-    .filter-container p
+
+    .filter-container input[type="checkbox"],
+    .filter-container label,
+    #job-count
     {
         font-size: 0.5em; /* Scale down font size */
-        line-height: 20px; /* Set line height equal to the height of the input */
         margin: 0; /* Remove default margin */
+    }
+    #reset-filters 
+    {
+        font-size: 0.5em; /* Scale down font size */
     }
 }

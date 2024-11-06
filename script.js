@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const locationFilter = document.getElementById('location-filter');
     const salaryFilter = document.getElementById('salary-filter');
     const maxSalaryFilter = document.getElementById('max-salary-filter');
+    const salaryEstimateFilter = document.getElementById('salary-estimate-filter');
     const jobTypeFilter = document.getElementById('job-type-filter');
     const experienceFilter = document.getElementById('experience-filter');
     const employmentTypeFilter = document.getElementById('employment-type-filter');
@@ -45,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             locationFilter.addEventListener("input", () => filterJobs(jobs));
             salaryFilter.addEventListener("input", () => filterJobs(jobs));
             maxSalaryFilter.addEventListener("input", () => filterJobs(jobs));
+            salaryEstimateFilter.addEventListener("change", () => filterJobs(jobs));
             jobTypeFilter.addEventListener("change", () => filterJobs(jobs));
             experienceFilter.addEventListener("change", () => filterJobs(jobs));
             employmentTypeFilter.addEventListener("change", () => filterJobs(jobs));
@@ -62,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 employmentTypeFilter.value = '';
                 workArrangementFilter.value = '';
                 dateFilter.value = '';
+                salaryEstimateFilter.checked = true;
 
                 // Re-display all jobs and reset salary stats and histogram
                 filterJobs(jobs);
@@ -116,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td>${job.company}</td>
                 <td>${job.location}</td>
                 <td>${job.salary}</td>
+                <td>${job.is_estimated_salary ? '' : '✔'}</td>
                 <td>${job.job_type}</td>
                 <td>${job.experience_level}</td>
                 <td>${job.employment_type}</td>
@@ -154,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const salaries = jobData.map(job => job.salary).filter(salary => salary !== null && salary !== 'null');
     
         // Convert salaries to numbers and filter out non-numeric values
-        const salaryNumbers = salaries.map(salary => parseFloat(salary.replace(/[^0-9.-]+/g, "")) / 1000).filter(num => !isNaN(num));
+        const salaryNumbers = salaries.map(salary => salary / 1000).filter(num => !isNaN(num));
     
         if (salaryNumbers.length === 0) {
             console.log("No valid salaries found to create a histogram.");
@@ -296,6 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const locationValue = locationFilter.value.toLowerCase();
         const salaryValue = salaryFilter.value ? parseFloat(salaryFilter.value) : null;
         const maxSalaryValue = maxSalaryFilter.value ? parseFloat(maxSalaryFilter.value) : null;
+        const salaryEstimateValue = salaryEstimateFilter.checked ? 1 : 0;
         const jobTypeValue = jobTypeFilter.value;
         const experienceValue = experienceFilter.value;
         const employmentTypeValue = employmentTypeFilter.value;
@@ -317,6 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const matchesWorkArrangement = !workArrangementValue || job.work_arrangement === workArrangementValue;
             const matchesMinSalary = !salaryValue || job.salary >= salaryValue;
             const matchesMaxSalary = !maxSalaryValue || job.salary <= maxSalaryValue;
+            const matchesSalaryEstimate = salaryEstimateValue === job.is_estimated_salary || !job.is_estimated_salary; 
     
             // Match jobs within the selected date range or show all if no range is selected
             const matchesDate = !daysAgo || daysDifference <= daysAgo;
@@ -324,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return matchesTitle && matchesCompany && matchesLocation &&
                    matchesMinSalary && matchesMaxSalary && matchesJobType &&
                    matchesExperience && matchesEmploymentType &&
-                   matchesWorkArrangement && matchesDate;
+                   matchesWorkArrangement && matchesDate && matchesSalaryEstimate;
         });
     
         // Update display and stats with filtered results

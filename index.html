@@ -61,6 +61,11 @@
                 <option value="180">Last 180 days</option>
                 <option value="365">Last 365 days</option>
             </select>
+            <div class="checkbox-container">
+                <label for="salary-estimate-filter">
+                    <input type="checkbox" id="salary-estimate-filter" checked> Include Estimated Salaries
+                </label>
+            </div>
             <button id="reset-filters">Reset Filters</button>
         
             <p id="job-count"></p> <!-- New job count display -->
@@ -75,6 +80,7 @@
                         <th>Company <span class="sort-arrow"></span></th>
                         <th>Location <span class="sort-arrow"></span></th>
                         <th>Salary <span class="sort-arrow"></span></th>
+                        <th>Salary Listed<span class="sort-arrow"></span></th>
                         <th>Job Type <span class="sort-arrow"></span></th>
                         <th>Experience Level <span class="sort-arrow"></span></th>
                         <th>Employment Type <span class="sort-arrow"></span></th>
