@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td><a href="${job.link}" target="_blank" class="job-link">${job.job_title}</a></td>
                 <td>${job.company}</td>
                 <td>${job.location}</td>
-                <td>${job.salary}</td>
+                <td>${(job.salary === null ? null : "$" + (job.salary/1000).toFixed(0) + "k")}</td>
                 <td>${job.is_estimated_salary ? '' : '✔'}</td>
                 <td>${job.job_type}</td>
                 <td>${job.experience_level}</td>
