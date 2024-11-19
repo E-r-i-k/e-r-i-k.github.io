@@ -16676,12 +16676,12 @@
     {
         "id": 1192,
         "job_title": "Principal Engineer",
-        "job_type": "backend",
+        "job_type": "back-end",
         "company": "UpperGround by Hudson - Technology, Projects & Transformation",
         "location": "Melbourne VIC",
         "salary": 195000.0,
         "is_estimated_salary": 1,
-        "experience_level": "senior",
+        "experience_level": "lead",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T06:48:29Z",
@@ -17362,7 +17362,7 @@
     {
         "id": 1241,
         "job_title": "Senior Mobile App Developer",
-        "job_type": "mobile app",
+        "job_type": "mobile",
         "company": "Telstra Super",
         "location": "Melbourne VIC",
         "salary": 170000.0,
