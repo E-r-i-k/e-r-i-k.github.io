@@ -30284,7 +30284,7 @@
     {
         "id": 2185,
         "job_title": "Software Engineer",
-        "job_type": null,
+        "job_type": "general",
         "company": "Valrose",
         "location": "Perth WA",
         "salary": 135000.0,
