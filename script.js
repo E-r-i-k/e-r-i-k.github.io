@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td><a href="${job.link}" target="_blank" class="job-link">${job.job_title}</a></td>
                 <td>${job.company}</td>
                 <td>${job.location}</td>
-                <td>${(job.salary === null ? '' : "$" + (job.salary / 1000).toFixed(0) + "k")}</td>
+                <td>${(job.salary === null || isNaN(job.salary) ? '' : "$" + (job.salary / 1000).toFixed(0) + "k")}</td>
                 <td>${job.is_estimated_salary ? '' : '✔'}</td>
                 <td>${job.job_type}</td>
                 <td>${job.experience_level}</td>
@@ -288,6 +288,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentArrow = table.querySelector(`th:nth-child(${columnIndex + 1}) .sort-arrow`);
         currentArrow.innerHTML = currentSortOrder === "asc" ? " &#x25B2;" : " &#x25BC;"; // Arrow pointing up or down
     }
+
+    function parseSalary(s) {
+        if (typeof s === "number") return s;
+        if (!s || typeof s !== "string") return 0;
+    
+        const match = s.replace(/[^0-9\-–]/g, '').split(/[-–]/);
+        const low = parseInt(match[0], 10);
+        return isNaN(low) ? 0 : low;
+    }
     
 
     function compareJobs(a, b, columnIndex) {
@@ -295,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
             case 0: return a.job_title.localeCompare(b.job_title);
             case 1: return a.company.localeCompare(b.company);
             case 2: return a.location.localeCompare(b.location);
-            case 3: return (a.salary || 0) - (b.salary || 0);
+            case 3: return parseSalary(a.salary) - parseSalary(b.salary);
             case 4: return (a.is_estimated_salary === b.is_estimated_salary) ? 0 : a.is_estimated_salary ? -1 : 1;
             case 5: return a.job_type.localeCompare(b.job_type);
             case 6: return a.experience_level.localeCompare(b.experience_level);
