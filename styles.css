@@ -197,6 +197,38 @@ tbody tr:hover {
     color: #7dfff2;
     text-decoration: underline;
 }
+    
+/* Wrapper around the table and button */
+.table-wrapper {
+    position: relative;
+}
+
+/* Positioning the button */
+.scroll-to-bottom-btn {
+    position: fixed;   /* Fixed at the bottom of the screen */
+    bottom: 20px;      /* 20px from the bottom of the screen */
+    right: 20px;       /* 20px from the right edge of the screen */
+    background-color: #03dac6; /* Button color */
+    color: rgb(0, 0, 0);            /* Text color */
+    border: none;
+    padding: 15px;
+    border-radius: 20%; /* Circular button */
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;    /* Make sure it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: block; 
+}
+
+/* Hover effect for the button */
+.scroll-to-bottom-btn:hover {
+    background-color: #7dfff2;
+}
+
+/* Style for table container */
+.table-container {
+    position: relative;  /* The button is positioned relative to this container */
+}
 
 
 
