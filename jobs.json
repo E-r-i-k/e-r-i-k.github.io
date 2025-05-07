@@ -114,7 +114,7 @@
     {
         "id": 9,
         "job_title": "Research Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "The Australian National University",
         "location": "Acton, Canberra ACT",
         "salary": 116600.0,
@@ -1234,7 +1234,7 @@
     {
         "id": 89,
         "job_title": "Principle Software Engineer / Architect",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Mine Site Technologies Pty Ltd",
         "location": "North Ryde, Sydney NSW",
         "salary": 175000.0,
@@ -1360,7 +1360,7 @@
     {
         "id": 98,
         "job_title": "Software Developer (Unreal/Unity)",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Viewport",
         "location": "Perth WA",
         "salary": 78000.0,
@@ -1668,7 +1668,7 @@
     {
         "id": 120,
         "job_title": "Mid/Senior Software Engineer with Simulation or Games Experience",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Prograda Pty Ltd",
         "location": "Port Melbourne, Melbourne VIC",
         "salary": 155000.0,
@@ -2494,7 +2494,7 @@
     {
         "id": 179,
         "job_title": "QA Software Engineer  (AU)",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "DroneShield",
         "location": "Sydney NSW",
         "salary": 145000.0,
@@ -2774,7 +2774,7 @@
     {
         "id": 199,
         "job_title": "Research Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "University of Tasmania",
         "location": "Melbourne VIC",
         "salary": 99330.0,
@@ -3376,7 +3376,7 @@
     {
         "id": 242,
         "job_title": "AWS Developer - 3 month contract - start 11/11",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Genesis IT Recruitment",
         "location": "Brisbane QLD",
         "salary": 279560.56,
@@ -3936,7 +3936,7 @@
     {
         "id": 282,
         "job_title": "Software Developer (Application Security focus)",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Protecht Group",
         "location": "Sydney NSW",
         "salary": 125000.0,
@@ -4146,7 +4146,7 @@
     {
         "id": 297,
         "job_title": "Senior Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Aurizn Pty Ltd",
         "location": "Adelaide SA",
         "salary": 135000.0,
@@ -4804,7 +4804,7 @@
     {
         "id": 344,
         "job_title": "CTO / Cofounder",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Covermate Services",
         "location": "Sydney NSW",
         "salary": 155000.0,
@@ -4818,7 +4818,7 @@
     {
         "id": 345,
         "job_title": "Senior Cloud Engineer",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Macquarie Group Limited",
         "location": "Sydney NSW",
         "salary": 170000.0,
@@ -4846,7 +4846,7 @@
     {
         "id": 347,
         "job_title": "Azure DevOps Engineer",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Randstad Digital",
         "location": "Perth WA",
         "salary": 220000.0,
@@ -5896,7 +5896,7 @@
     {
         "id": 422,
         "job_title": "Senior DevOps Engineer",
-        "job_type": "ai",
+        "job_type": "full-stack",
         "company": "Randstad Digital",
         "location": "Canberra ACT",
         "salary": 150000.0,
@@ -6036,7 +6036,7 @@
     {
         "id": 432,
         "job_title": "Senior Software Test Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Suncorp",
         "location": "Sydney NSW",
         "salary": 155000.0,
@@ -6092,7 +6092,7 @@
     {
         "id": 436,
         "job_title": "Application Security Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "ASIC",
         "location": "Melbourne VIC",
         "salary": 171963.0,
@@ -6120,7 +6120,7 @@
     {
         "id": 438,
         "job_title": "Data Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "BioScout",
         "location": "Marrickville, Sydney NSW",
         "salary": 100000.0,
@@ -6162,7 +6162,7 @@
     {
         "id": 441,
         "job_title": "Principal DevOps Engineer",
-        "job_type": "ai",
+        "job_type": "full-stack",
         "company": "Talent Insights Group Pty Ltd",
         "location": "Melbourne VIC",
         "salary": 275000.0,
@@ -6414,7 +6414,7 @@
     {
         "id": 459,
         "job_title": "Mid-Level Software Engineer (Ruby on Rails)",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Allura Partners",
         "location": "Sydney NSW",
         "salary": 120000.0,
@@ -6862,7 +6862,7 @@
     {
         "id": 491,
         "job_title": "Senior .Net Developer | 100% Remote",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Just Digital People",
         "location": "Melbourne VIC",
         "salary": 180000.0,
@@ -7058,7 +7058,7 @@
     {
         "id": 505,
         "job_title": "Senior Engineer- Azure and Git",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "LAB3 PTY LTD",
         "location": "Sydney NSW",
         "salary": 270000.0,
@@ -7268,7 +7268,7 @@
     {
         "id": 520,
         "job_title": "DevOps Lead",
-        "job_type": "ai",
+        "job_type": "full-stack",
         "company": "SG Fleet Group Ltd",
         "location": "Pymble, Sydney NSW",
         "salary": 165000.0,
@@ -7310,7 +7310,7 @@
     {
         "id": 523,
         "job_title": "EOI | Computing & Software| Multiple Positions - SKA-Low Telescope",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "CSIRO",
         "location": "Perth WA",
         "salary": 106173.89,
@@ -7408,7 +7408,7 @@
     {
         "id": 530,
         "job_title": "Staff Software Engineer - Dynamic Authorisation (CIAM)",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Commonwealth Bank \u2013 Technology",
         "location": "Eveleigh, Sydney NSW",
         "salary": 195000.0,
@@ -7534,7 +7534,7 @@
     {
         "id": 539,
         "job_title": "Software / Data engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Vivanti Consulting Pty Ltd",
         "location": "Sydney NSW",
         "salary": 125000.0,
@@ -8276,7 +8276,7 @@
     {
         "id": 592,
         "job_title": "CloudSense Developer",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Peoplebank Australia WA",
         "location": "Perth WA",
         "salary": 200000.0,
@@ -8360,7 +8360,7 @@
     {
         "id": 598,
         "job_title": "Developer Programmer - Manager",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "PwC",
         "location": "Sydney NSW",
         "salary": 95000.0,
@@ -8402,7 +8402,7 @@
     {
         "id": 601,
         "job_title": "Systems/DevOps Engineer",
-        "job_type": "ai",
+        "job_type": "full-stack",
         "company": "Deloitte",
         "location": "Sydney NSW",
         "salary": 95000.0,
@@ -8598,7 +8598,7 @@
     {
         "id": 615,
         "job_title": "RPA Developer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Amentum Australia Proprietary Limited",
         "location": "Canberra ACT",
         "salary": 120000.0,
@@ -8626,7 +8626,7 @@
     {
         "id": 617,
         "job_title": "Senior Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Cyient Australia Pty Ltd",
         "location": "Adelaide SA",
         "salary": 120000.0,
@@ -8836,7 +8836,7 @@
     {
         "id": 632,
         "job_title": "Senior Software Engineer - Linux applications",
-        "job_type": "ai",
+        "job_type": "embedded",
         "company": "MCS Consulting",
         "location": "Macquarie Park, Sydney NSW",
         "salary": 140000.0,
@@ -8948,7 +8948,7 @@
     {
         "id": 640,
         "job_title": "Senior Software Engineer (Integration)",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "UNSW College",
         "location": "Kensington, Sydney NSW",
         "salary": 155000.0,
@@ -9270,7 +9270,7 @@
     {
         "id": 663,
         "job_title": "Senior ServiceNow Developer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Kinetic IT",
         "location": "Parramatta, Sydney NSW",
         "salary": 145000.0,
@@ -9368,7 +9368,7 @@
     {
         "id": 670,
         "job_title": "\u200bSenior NetSuite Developer - 12-month opportunity",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Aesop",
         "location": "Collingwood, Melbourne VIC",
         "salary": 130000.0,
@@ -9494,7 +9494,7 @@
     {
         "id": 679,
         "job_title": "Senior Site Reliability Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Talenza",
         "location": "Sydney NSW",
         "salary": 190000.0,
@@ -10068,7 +10068,7 @@
     {
         "id": 720,
         "job_title": "Systems Analyst",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Safe Financial Group",
         "location": "Southport, Gold Coast QLD",
         "salary": 125000.0,
@@ -10138,7 +10138,7 @@
     {
         "id": 725,
         "job_title": "Senior Application Security Engineer",
-        "job_type": "ai",
+        "job_type": "security",
         "company": "StraightUp",
         "location": "Melbourne VIC",
         "salary": 220000.0,
@@ -10418,7 +10418,7 @@
     {
         "id": 745,
         "job_title": "AEM Tech Lead/Sr. Developer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Capgemini Australia Pty Ltd",
         "location": "Sydney NSW",
         "salary": 155000.0,
@@ -10558,7 +10558,7 @@
     {
         "id": 755,
         "job_title": "Senior Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Commonwealth Bank \u2013 Technology",
         "location": "Eveleigh, Sydney NSW",
         "salary": 155000.0,
@@ -10908,7 +10908,7 @@
     {
         "id": 780,
         "job_title": "Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Real Time",
         "location": "Sydney NSW",
         "salary": 150000.0,
@@ -11412,7 +11412,7 @@
     {
         "id": 816,
         "job_title": "Senior Software Developer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Cleared Recruitment",
         "location": "Canberra ACT",
         "salary": 160000.0,
@@ -11790,7 +11790,7 @@
     {
         "id": 843,
         "job_title": "Engineering Manager - Security",
-        "job_type": "ai",
+        "job_type": "security",
         "company": "Talent \u2013 Specialists in tech, transformation & beyond",
         "location": "Sydney NSW",
         "salary": 245000.0,
@@ -11832,7 +11832,7 @@
     {
         "id": 846,
         "job_title": "Cloud Engineer",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Paxus",
         "location": "Canberra ACT",
         "salary": 97326.0,
@@ -12168,7 +12168,7 @@
     {
         "id": 870,
         "job_title": "Senior Software Engineer - Service Now",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "University of Technology Sydney",
         "location": "Sydney NSW",
         "salary": 155000.0,
@@ -12266,7 +12266,7 @@
     {
         "id": 877,
         "job_title": "Head of Software Engineering & Applications",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "NAVANTIA AUSTRALIA PTY LTD",
         "location": "Darling Harbour, Sydney NSW",
         "salary": 170000.0,
@@ -12434,7 +12434,7 @@
     {
         "id": 889,
         "job_title": "Cloud Platform Engineer",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Auto & General",
         "location": "Toowong, Brisbane QLD",
         "salary": 145000.0,
@@ -12518,7 +12518,7 @@
     {
         "id": 895,
         "job_title": "Data Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "DESIGNED AND DEVELOPED PTY LTD",
         "location": "Vermont, Melbourne VIC",
         "salary": 95000.0,
@@ -12602,7 +12602,7 @@
     {
         "id": 901,
         "job_title": "Staff Site Reliability Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "iterate",
         "location": "Melbourne VIC",
         "salary": 195000.0,
@@ -12616,7 +12616,7 @@
     {
         "id": 902,
         "job_title": "Integration Engineer - Workato",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "David Jones Limited",
         "location": "Docklands, Melbourne VIC",
         "salary": null,
@@ -12686,7 +12686,7 @@
     {
         "id": 907,
         "job_title": "Data Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Tritium Power Solutions",
         "location": "Brisbane QLD",
         "salary": 110000.0,
@@ -12700,7 +12700,7 @@
     {
         "id": 908,
         "job_title": "Microsoft Power Platform Developer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Sensei",
         "location": "Brisbane QLD",
         "salary": 130000.0,
@@ -12733,7 +12733,7 @@
         "location": "Sydney NSW",
         "salary": 170000.0,
         "is_estimated_salary": 0,
-        "experience_level": "junior",
+        "experience_level": "senior",
         "employment_type": "full-time",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T02:35:56Z",
@@ -12742,7 +12742,7 @@
     {
         "id": 911,
         "job_title": "Platform Engineering Lead",
-        "job_type": "lead",
+        "job_type": "general",
         "company": "Verify Consulting",
         "location": "Brisbane QLD",
         "salary": 187500.0,
@@ -12770,7 +12770,7 @@
     {
         "id": 913,
         "job_title": "Cyber Engineer (DevOps/BA) - Contract",
-        "job_type": "ai",
+        "job_type": "full-stack",
         "company": "Robert Half",
         "location": "Sydney NSW",
         "salary": 275200.0,
@@ -12826,7 +12826,7 @@
     {
         "id": 917,
         "job_title": "Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Paxus",
         "location": "Perth WA",
         "salary": 195000.0,
@@ -12952,7 +12952,7 @@
     {
         "id": 926,
         "job_title": "Senior Software Engineer - Visualisation, Perth - Australia",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Rio Tinto",
         "location": "Perth WA",
         "salary": 105000.0,
@@ -15192,7 +15192,7 @@
     {
         "id": 1086,
         "job_title": "C# Software Engineer (Windows Desktop Application)",
-        "job_type": "desktop",
+        "job_type": "general",
         "company": "Langdi Australia Pty Ltd",
         "location": "Melbourne VIC",
         "salary": 95000.0,
@@ -25585,7 +25585,7 @@
         "location": "Sydney NSW",
         "salary": 85000.0,
         "is_estimated_salary": 1,
-        "experience_level": "junior-mid",
+        "experience_level": "mid",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-04-08 15:38:47.404502",
@@ -26154,7 +26154,7 @@
     {
         "id": 1890,
         "job_title": "Senior Software Development Manager",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "Aero Ranger",
         "location": "North Perth",
         "salary": 170000.0,
@@ -26378,12 +26378,12 @@
     {
         "id": 1906,
         "job_title": "React | Typescript (Azure) Contractor",
-        "job_type": "ai",
+        "job_type": "front-end",
         "company": "Swordfish Search Pty Ltd",
         "location": "Sydney NSW",
         "salary": 270000.0,
         "is_estimated_salary": 0,
-        "experience_level": "contract",
+        "experience_level": "senior",
         "employment_type": "full-time",
         "work_arrangement": "on-site",
         "date_posted": "2025-04-16 16:05:08.300071",
@@ -27190,7 +27190,7 @@
     {
         "id": 1964,
         "job_title": "Senior Technical Lead",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "AustralianSuper",
         "location": "Melbourne VIC",
         "salary": 220000.0,
@@ -28086,7 +28086,7 @@
     {
         "id": 2028,
         "job_title": "Cyber and Software Engineer",
-        "job_type": "software",
+        "job_type": "general",
         "company": "P&C Partners Pty Ltd",
         "location": "Hamilton,Brisbane QLD",
         "salary": 160000.0,
@@ -29052,7 +29052,7 @@
     {
         "id": 2097,
         "job_title": "Senior .Net Engineer - Remote - Must be based in Aus or NZ",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "Just Digital People",
         "location": "Melbourne VIC",
         "salary": 170000.0,
@@ -30382,7 +30382,7 @@
     {
         "id": 2192,
         "job_title": "Staff Software Engineer",
-        "job_type": "ai",
+        "job_type": "general",
         "company": "x15",
         "location": "Eveleigh,Sydney NSW",
         "salary": 190000.0,
@@ -30429,7 +30429,7 @@
         "location": "Sydney NSW",
         "salary": 145000.0,
         "is_estimated_salary": 1,
-        "experience_level": "null",
+        "experience_level": "senior",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-04-24 16:00:18.327501",
@@ -30634,7 +30634,7 @@
     {
         "id": 2210,
         "job_title": "AWS Engineer",
-        "job_type": "ai",
+        "job_type": "back-end",
         "company": "CalibrX",
         "location": "Melbourne VIC",
         "salary": 160000.0,
