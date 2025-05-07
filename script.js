@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const windowHeight = window.innerHeight;  // Height of the viewport (screen)
 
         // Show the button if the table is near the bottom of the screen
-        if (tableBottom >= windowHeight + 200) {
+        if (currentDisplayIndex != filteredJobs.length && tableBottom >= windowHeight + 200) {
             scrollToBottomBtn.style.display = 'block';  // Show the button
         } else {
             scrollToBottomBtn.style.display = 'none';  // Hide the button
@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Scroll to the bottom when the button is clicked
     scrollToBottomBtn.addEventListener('click', function() {
+        currentDisplayIndex = filteredJobs.length;
+        displayJobs(filteredJobs);
+        scrollToBottomBtn.style.display = 'none';  // Hide the button
         window.scrollTo({
             top: document.body.scrollHeight,  // Scroll to the bottom of the page
             behavior: 'smooth'  // Smooth scrolling effect
