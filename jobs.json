@@ -33640,5 +33640,47 @@
         "work_arrangement": "hybrid",
         "date_posted": "2025-05-09 12:58:11.953172",
         "link": "https://www.seek.com.au/job/84085582"
+    },
+    {
+        "id": 2425,
+        "job_title": "Software Engineer",
+        "job_type": "control",
+        "company": "Australian System Assurance Company pty ltd",
+        "location": "Meadowbank,Sydney NSW",
+        "salary": 81500.0,
+        "is_estimated_salary": 0,
+        "experience_level": "senior",
+        "employment_type": "full-time",
+        "work_arrangement": "on-site",
+        "date_posted": "2025-05-11 13:04:52.062347",
+        "link": "https://www.seek.com.au/job/84139549"
+    },
+    {
+        "id": 2426,
+        "job_title": "Chief Engineer",
+        "job_type": "ai",
+        "company": "Commonwealth Bank  Technology",
+        "location": "Perth WA",
+        "salary": 245000.0,
+        "is_estimated_salary": 1,
+        "experience_level": "senior",
+        "employment_type": "full-time",
+        "work_arrangement": "hybrid",
+        "date_posted": "2025-05-11 09:05:26.271458",
+        "link": "https://www.seek.com.au/job/84138754"
+    },
+    {
+        "id": 2427,
+        "job_title": "ServiceNow Developer",
+        "job_type": "full-stack",
+        "company": "Australian Retirement Trust",
+        "location": "Brisbane QLD",
+        "salary": 120000.0,
+        "is_estimated_salary": 1,
+        "experience_level": "senior",
+        "employment_type": "full-time",
+        "work_arrangement": "hybrid",
+        "date_posted": "2025-05-10 13:06:04.256652",
+        "link": "https://www.seek.com.au/job/84125517"
     }
 ]
