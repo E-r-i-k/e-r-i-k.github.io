@@ -1,4 +1,6 @@
 let salaryChart; // Variable to hold the chart instance
+let weeklyAverageSalaryChart; // New variable for the weekly average chart
+let allJobs = []; // Make allJobs accessible globally
 let currentSortColumnIndex = null; // Track which column is sorted
 let currentSortOrder = 'asc'; // Track current sort order
 let filteredJobs = []; // Filtered job list
@@ -25,11 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const medianSalaryElem = document.getElementById('median-salary');
 
     const resetButton = document.getElementById('reset-filters'); // Get reset button
+    const showWeeklyAverageSalaryBtn = document.getElementById('show-weekly-average-salary-btn'); // Get the new button
 
     const table = document.getElementById("job-listings-table");
     const headers = table.querySelectorAll("th");
     const scrollToBottomBtn = document.getElementById('scroll-to-bottom-btn');
 
+    // Initially hide the weekly average salary chart
+    document.getElementById('weeklyAverageSalaryChart').style.display = 'none';
 
     headers.forEach((header, index) => {
         header.addEventListener("click", () => {
@@ -51,13 +56,13 @@ document.addEventListener("DOMContentLoaded", () => {
     window.onscroll = function() {
         const tableContainer = document.querySelector('.table-container');
         const tableBottom = tableContainer.getBoundingClientRect().bottom; // Bottom of table container
-        const windowHeight = window.innerHeight;  // Height of the viewport (screen)
+        const windowHeight = window.innerHeight;  // Height of the viewport (screen)
 
         // Show the button if the table is near the bottom of the screen
-        if (currentDisplayIndex != filteredJobs.length && tableBottom >= windowHeight + 200) {
-            scrollToBottomBtn.style.display = 'block';  // Show the button
+        if (currentDisplayIndex !== filteredJobs.length && tableBottom >= windowHeight + 200) {
+            scrollToBottomBtn.style.display = 'block';  // Show the button
         } else {
-            scrollToBottomBtn.style.display = 'none';  // Hide the button
+            scrollToBottomBtn.style.display = 'none';  // Hide the button
         }
     };
     
@@ -65,10 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToBottomBtn.addEventListener('click', function() {
         currentDisplayIndex = filteredJobs.length;
         displayJobs(filteredJobs);
-        scrollToBottomBtn.style.display = 'none';  // Hide the button
+        scrollToBottomBtn.style.display = 'none';  // Hide the button
         window.scrollTo({
-            top: document.body.scrollHeight,  // Scroll to the bottom of the page
-            behavior: 'smooth'  // Smooth scrolling effect
+            top: document.body.scrollHeight,  // Scroll to the bottom of the page
+            behavior: 'smooth'  // Smooth scrolling effect
         });
     });
     
@@ -77,17 +82,53 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('jobs.json')
         .then(response => response.json())
         .then(jobs => {
-            allJobs = jobs;
-            populateFilters(jobs);
-            filterJobs(jobs);
+            // Normalize data on load
+            allJobs = jobs.map(job => {
+                const newJob = { ...job };
+                // Normalize employment_type
+                if (newJob.employment_type) {
+                    newJob.employment_type = newJob.employment_type.toLowerCase();
+                    if (newJob.employment_type.toLowerCase().includes('temp'))
+                        newJob.employment_type = 'contract';
+                    if (newJob.employment_type.toLowerCase().includes('casual'))
+                        newJob.employment_type = 'casual';
+                }
+                // Normalize work_arrangement to lowercase for consistency
+                if (newJob.work_arrangement) {
+                    newJob.work_arrangement = newJob.work_arrangement.toLowerCase();
+                }
+                return newJob;
+            });
+
+            populateFilters(allJobs);
+            filterJobs(allJobs);
             
+            // Add event listener for the new button
+            showWeeklyAverageSalaryBtn.addEventListener('click', () => {
+                const salaryHistogram = document.getElementById('salaryHistogram');
+                const weeklyAverageSalaryChartCanvas = document.getElementById('weeklyAverageSalaryChart');
+
+                if (weeklyAverageSalaryChartCanvas.style.display === 'none') {
+                    // Show the weekly average chart and hide the histogram
+                    weeklyAverageSalaryChartCanvas.style.display = 'block';
+                    salaryHistogram.style.display = 'none';
+                    showWeeklyAverageSalaryBtn.textContent = 'Show Salary Histogram';
+                    createWeeklyAverageSalaryChart(filteredJobs); // Pass filteredJobs
+                } else {
+                    // Show the histogram and hide the weekly average chart
+                    weeklyAverageSalaryChartCanvas.style.display = 'none';
+                    salaryHistogram.style.display = 'block';
+                    showWeeklyAverageSalaryBtn.textContent = 'Show Weekly Average Salary';
+                    createSalaryHistogram(filteredJobs); // Re-render histogram with filtered data
+                }
+            });
 
             // Add event listeners for filtering
             titleFilter.addEventListener("input", debounce(() => filterJobs(jobs)));
-            companyFilter.addEventListener("input", () =>  debounce(filterJobs(jobs)));
-            locationFilter.addEventListener("input", () =>  debounce(filterJobs(jobs)));
-            salaryFilter.addEventListener("input",  debounce(() => filterJobs(jobs)));
-            maxSalaryFilter.addEventListener("input",  debounce(() => filterJobs(jobs)));
+            companyFilter.addEventListener("input", debounce(() => filterJobs(jobs)));
+            locationFilter.addEventListener("input", debounce(() => filterJobs(jobs)));
+            salaryFilter.addEventListener("input", debounce(() => filterJobs(jobs)));
+            maxSalaryFilter.addEventListener("input", debounce(() => filterJobs(jobs)));
             salaryEstimateFilter.addEventListener("change", () => filterJobs(jobs));
             jobTypeFilter.addEventListener("change", () => filterJobs(jobs));
             experienceFilter.addEventListener("change", () => filterJobs(jobs));
@@ -101,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 companyFilter.value = '';
                 locationFilter.value = '';
                 salaryFilter.value = '';
+                maxSalaryFilter.value = ''; // Reset max salary filter
                 jobTypeFilter.value = '';
                 experienceFilter.value = '';
                 employmentTypeFilter.value = '';
@@ -201,37 +243,47 @@ document.addEventListener("DOMContentLoaded", () => {
             maxSalaryElem.textContent = `$${maxSalary}k`;
             averageSalaryElem.textContent = `$${averageSalary}k`;
             medianSalaryElem.textContent = `$${medianSalary}k`;
+        } else {
+            minSalaryElem.textContent = 'N/A';
+            maxSalaryElem.textContent = 'N/A';
+            averageSalaryElem.textContent = 'N/A';
+            medianSalaryElem.textContent = 'N/A';
         }
     }
 
     function calculateMedian(values) {
         values.sort((a, b) => a - b);
         const middle = Math.floor(values.length / 2);
-        return values.length % 2 !== 0 ? values[middle] : ((values[middle - 1] + values[middle]) / 2).toFixed(2);
+        return values.length % 2 !== 0 ? values[middle] : ((values[middle - 1] + values[middle]) / 2);
     }
 
     function createSalaryHistogram(jobData) {
         const salaries = jobData.map(job => job.salary).filter(salary => salary !== null && salary !== 'null');
         
         const salaryNumbers = salaries.map(salary => salary / 1000).filter(num => !isNaN(num));
-        if (!salaryNumbers.length) return;
+        if (!salaryNumbers.length) {
+            if (salaryChart) {
+                salaryChart.destroy();
+                salaryChart = null; // Clear chart instance
+            }
+            return;
+        }
     
         const maxSalary = Math.max(...salaryNumbers);
         const minSalary = 0;
         const binCount = Math.max(10, Math.min(salaryNumbers.length, 30));
         const binSize = (maxSalary - minSalary) / binCount;
         const bins = Array.from({ length: binCount + 1 }, (_, i) => minSalary + i * binSize);
-        bins[bins.length - 1] = maxSalary;
+        bins[bins.length - 1] = maxSalary; // Ensure the last bin includes max salary
     
         const histogramData = new Array(binCount).fill(0);
         salaryNumbers.forEach(salary => {
             for (let i = 0; i < bins.length - 1; i++) {
-                if (salary >= bins[i] && salary < bins[i + 1]) {
+                if (salary >= bins[i] && (i === bins.length - 2 ? salary <= bins[i + 1] : salary < bins[i + 1])) {
                     histogramData[i]++;
                     return;
                 }
             }
-            if (salary === maxSalary) histogramData[binCount - 1]++;
         });
     
         const labels = bins.slice(0, -1).map((bin, i) =>
@@ -254,8 +306,30 @@ document.addEventListener("DOMContentLoaded", () => {
                     }]
                 },
                 options: {
-                    scales: { x: { beginAtZero: true }, y: { beginAtZero: true } },
-                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#e0e0e0' },
+                            title: { display: true, text: 'Salary Range', color: '#e0e0e0' }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#e0e0e0' },
+                            title: { display: true, text: 'Number of Jobs', color: '#e0e0e0' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Jobs: ${context.raw}`;
+                                }
+                            }
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false
                 }
@@ -264,6 +338,139 @@ document.addEventListener("DOMContentLoaded", () => {
             salaryChart.data.labels = labels;
             salaryChart.data.datasets[0].data = histogramData;
             salaryChart.update();
+        }
+    }
+
+
+    function createWeeklyAverageSalaryChart(jobData, windowSize = 3) { // Added windowSize parameter
+        // Group salaries by week
+        const weeklySalaries = {};
+        jobData.forEach(job => {
+            const date = new Date(job.date_posted);
+            if (isNaN(date) || job.salary === null || isNaN(parseFloat(job.salary))) return; // Skip invalid dates or salaries
+    
+            // Get the start of the week (Monday)
+            const dayOfWeek = (date.getDay() + 6) % 7; // Adjust to make Monday=0, Sunday=6
+            const startOfWeek = new Date(date);
+            startOfWeek.setDate(date.getDate() - dayOfWeek);
+            startOfWeek.setHours(0, 0, 0, 0); // Set to start of the day
+    
+            const weekKey = startOfWeek.toISOString().split('T')[0]; // Format as YYYY-MM-DD for week start
+    
+            const salary = parseFloat(job.salary);
+            if (!weeklySalaries[weekKey]) {
+                weeklySalaries[weekKey] = [];
+            }
+            weeklySalaries[weekKey].push(salary);
+        });
+    
+        // Get all unique week keys and sort them chronologically
+        const allWeekKeys = Object.keys(weeklySalaries);
+        if (allWeekKeys.length === 0) {
+            if (weeklyAverageSalaryChart) {
+                weeklyAverageSalaryChart.destroy();
+                weeklyAverageSalaryChart = null;
+            }
+            return;
+        }
+    
+        const minDate = new Date(Math.min(...allWeekKeys.map(key => new Date(key))));
+        const maxDate = new Date(Math.max(...allWeekKeys.map(key => new Date(key))));
+    
+        const labels = [];
+        const rawAverages = []; // Store raw weekly averages for moving average calculation
+        let currentDate = new Date(minDate);
+        let lastAverage = 0; // Stores the last calculated average salary
+    
+        while (currentDate <= maxDate) {
+            const weekKey = currentDate.toISOString().split('T')[0];
+            labels.push(weekKey);
+    
+            if (weeklySalaries[weekKey] && weeklySalaries[weekKey].length > 0) {
+                const salariesInWeek = weeklySalaries[weekKey];
+                const average = salariesInWeek.reduce((sum, s) => sum + s, 0) / salariesInWeek.length;
+                rawAverages.push(average);
+                lastAverage = average;
+            } else {
+                rawAverages.push(lastAverage); // Use the last average if no data for the current week
+            }
+    
+            // Move to the next week (add 7 days)
+            currentDate.setDate(currentDate.getDate() + 7);
+        }
+    
+        // Calculate the moving average
+        const smoothedData = [];
+        for (let i = 0; i < rawAverages.length; i++) {
+            const startIndex = Math.max(0, i - Math.floor(windowSize / 2));
+            const endIndex = Math.min(rawAverages.length - 1, i + Math.ceil(windowSize / 2) -1); // Adjusted for centering
+            
+            let sum = 0;
+            let count = 0;
+            for (let j = startIndex; j <= endIndex; j++) {
+                // Only include non-zero (meaning actual data or carried forward) averages
+                if (rawAverages[j] > 0) {
+                    sum += rawAverages[j];
+                    count++;
+                }
+            }
+            if (count > 0) {
+                smoothedData.push((sum / count) / 1000); // Convert to 'k'
+            } else {
+                smoothedData.push(0); // If no data in window, push 0 or handle as appropriate
+            }
+        }
+        
+        // Create or update the chart
+        if (!weeklyAverageSalaryChart) {
+            const ctx = document.getElementById('weeklyAverageSalaryChart').getContext('2d');
+            weeklyAverageSalaryChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: `Average Salary (k) - ${windowSize}-week Moving Average`, // Updated label
+                        data: smoothedData,
+                        borderColor: '#7dfff2',
+                        backgroundColor: '#03dac6',
+                        fill: false,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            beginAtZero: false,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#e0e0e0' },
+                            title: { display: true, text: 'Week Start Date', color: '#e0e0e0' }
+                        },
+                        y: {
+                            beginAtZero: false,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#e0e0e0' },
+                            title: { display: true, text: 'Average Salary (k)', color: '#e0e0e0' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Avg. Salary: $${context.raw.toFixed(0)}k`;
+                                }
+                            }
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        } else {
+            weeklyAverageSalaryChart.data.labels = labels;
+            weeklyAverageSalaryChart.data.datasets[0].data = smoothedData;
+            weeklyAverageSalaryChart.data.datasets[0].label = `Average Salary (k) - ${windowSize}-week Moving Average`;
+            weeklyAverageSalaryChart.update();
         }
     }
 
@@ -286,7 +493,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         // Update arrow indicators
         const arrows = table.querySelectorAll(".sort-arrow");
-        arrows.forEach(arrow => arrow.innerHTML = '');  // Clear existing arrows
+        arrows.forEach(arrow => arrow.innerHTML = '');  // Clear existing arrows
     
         const currentArrow = table.querySelector(`th:nth-child(${columnIndex + 1}) .sort-arrow`);
         currentArrow.innerHTML = currentSortOrder === "asc" ? " &#x25B2;" : " &#x25BC;"; // Arrow pointing up or down
@@ -339,8 +546,8 @@ document.addEventListener("DOMContentLoaded", () => {
             return job.job_title.toLowerCase().includes(titleValue) &&
                 job.company.toLowerCase().includes(companyValue) &&
                 job.location.toLowerCase().includes(locationValue) &&
-                (!salaryValue || job.salary >= salaryValue) &&
-                (!maxSalaryValue || job.salary <= maxSalaryValue) &&
+                (!salaryValue || (job.salary !== null && !isNaN(job.salary) && parseFloat(job.salary) >= salaryValue)) &&
+                (!maxSalaryValue || (job.salary !== null && !isNaN(job.salary) && parseFloat(job.salary) <= maxSalaryValue)) &&
                 (!jobTypeValue || job.job_type === jobTypeValue) &&
                 (!experienceValue || job.experience_level === experienceValue) &&
                 (!employmentTypeValue || job.employment_type === employmentTypeValue) &&
@@ -355,7 +562,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Calculate salary stats and update histogram
         calculateSalaryStats(filteredJobs);
-        createSalaryHistogram(filteredJobs);
+        
+        // Update charts only if they are currently displayed
+        if (document.getElementById('salaryHistogram').style.display !== 'none') {
+            createSalaryHistogram(filteredJobs);
+        } else if (document.getElementById('weeklyAverageSalaryChart').style.display !== 'none') {
+            createWeeklyAverageSalaryChart(filteredJobs);
+        }
 
         // Update job count
         const jobCountElem = document.getElementById('job-count');

@@ -8472,7 +8472,7 @@
     {
         "id": 606,
         "job_title": "Android Developer",
-        "job_type": "android",
+        "job_type": "mobile",
         "company": "Simplified",
         "location": "Sydney NSW",
         "salary": 150000.0,
@@ -13526,7 +13526,7 @@
     {
         "id": 967,
         "job_title": "Principal Cloud Platform Engineer",
-        "job_type": "cloud",
+        "job_type": "back-end",
         "company": "Department of Energy, Environment and Climate Action - Bushfire and Forest Services",
         "location": "Melbourne VIC",
         "salary": 157354.0,
@@ -16088,7 +16088,7 @@
     {
         "id": 1150,
         "job_title": "Senior Engineer (Google Cloud)",
-        "job_type": "cloud",
+        "job_type": "back-end",
         "company": "INNABLR PTY LTD",
         "location": "Melbourne VIC",
         "salary": 155000.0,
@@ -31915,7 +31915,7 @@
         "is_estimated_salary": 1,
         "experience_level": "senior",
         "employment_type": "full-time",
-        "work_arrangement": "Hybrid",
+        "work_arrangement": "hybrid",
         "date_posted": "2025-05-01 16:07:59.668389",
         "link": "https://www.seek.com.au/job/83931696"
     },
@@ -34601,7 +34601,7 @@
         "location": "Brisbane QLD",
         "salary": 145000.0,
         "is_estimated_salary": 1,
-        "experience_level": "junior,-mid,-senior",
+        "experience_level": "mid",
         "employment_type": "full-time",
         "work_arrangement": "on-site",
         "date_posted": "2025-05-13 08:30:55.242243",

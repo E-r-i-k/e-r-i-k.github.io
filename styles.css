@@ -110,11 +110,11 @@ h1 {
 /* Consistent width for inputs and selects */
 .filter-container input,
 .filter-container select {
-    width: calc(20% - 10px);  /* Adjust width to account for the gap */
+    width: calc(20% - 10px); /* Adjust width to account for the gap */
     gap: 10px;
     padding: 5px;
     font-size: 14px;
-    box-sizing: border-box;  /* Include padding/border in width */
+    box-sizing: border-box; /* Include padding/border in width */
 }
 
 .checkbox-container {
@@ -143,6 +143,25 @@ h1 {
     color: black;
 }
 
+/* Style for the new weekly average salary button */
+#show-weekly-average-salary-btn {
+    padding: 6px 12px;
+    background-color: #03dac6;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px; /* Space below the button */
+    display: block; /* Make it a block element to take full width */
+    width: 100%; /* Full width */
+}
+
+#show-weekly-average-salary-btn:hover {
+    background-color: #7dfff2;
+    color: black;
+}
+
 .select-items {
     width:auto
 }
@@ -156,7 +175,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background-color: #1e1e1e;
-    color:   #e0e0e0;
+    color:  #e0e0e0;
     font-size: 0.9em;
     table-layout:fixed; /* Allow for flexible widths */
     text-wrap:wrap; /* Allow wrapping of text */
@@ -205,17 +224,17 @@ tbody tr:hover {
 
 /* Positioning the button */
 .scroll-to-bottom-btn {
-    position: fixed;   /* Fixed at the bottom of the screen */
-    bottom: 20px;      /* 20px from the bottom of the screen */
-    right: 20px;       /* 20px from the right edge of the screen */
+    position: fixed;  /* Fixed at the bottom of the screen */
+    bottom: 20px;   /* 20px from the bottom of the screen */
+    right: 20px;    /* 20px from the right edge of the screen */
     background-color: #03dac6; /* Button color */
-    color: rgb(0, 0, 0);            /* Text color */
+    color: rgb(0, 0, 0);      /* Text color */
     border: none;
     padding: 15px;
     border-radius: 20%; /* Circular button */
     font-size: 24px;
     cursor: pointer;
-    z-index: 1000;    /* Make sure it stays above other elements */
+    z-index: 1000;  /* Make sure it stays above other elements */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     display: block; 
 }
@@ -227,22 +246,22 @@ tbody tr:hover {
 
 /* Style for table container */
 .table-container {
-    position: relative;  /* The button is positioned relative to this container */
+    position: relative; /* The button is positioned relative to this container */
 }
 
 
 
 /* Flexible column widths */
-th:nth-child(1), td:nth-child(1) { width: 10%; }   /* Job Title */
-th:nth-child(2), td:nth-child(2) { width: 10%; }   /* Company */
-th:nth-child(3), td:nth-child(3) { width: 7%; }   /* Location */
-th:nth-child(4), td:nth-child(4) { width: 4%; }   /* Salary */
-th:nth-child(5), td:nth-child(5) { width: 3%; }   /* Estimated */
-th:nth-child(6), td:nth-child(6) { width: 5%; }   /* Job Type */
-th:nth-child(7), td:nth-child(7) { width: 5%; }   /* Experience Level */
-th:nth-child(8), td:nth-child(8) { width: 6%; }    /* Employment Type */
-th:nth-child(9), td:nth-child(9) { width: 5%; }    /* Work Arrangement */
-th:nth-child(10), td:nth-child(10) { width: 5%; }    /* Date Posted */
+th:nth-child(1), td:nth-child(1) { width: 10%; }  /* Job Title */
+th:nth-child(2), td:nth-child(2) { width: 10%; }  /* Company */
+th:nth-child(3), td:nth-child(3) { width: 7%; }  /* Location */
+th:nth-child(4), td:nth-child(4) { width: 4%; }  /* Salary */
+th:nth-child(5), td:nth-child(5) { width: 3%; }  /* Estimated */
+th:nth-child(6), td:nth-child(6) { width: 5%; }  /* Job Type */
+th:nth-child(7), td:nth-child(7) { width: 5%; }  /* Experience Level */
+th:nth-child(8), td:nth-child(8) { width: 6%; }  /* Employment Type */
+th:nth-child(9), td:nth-child(9) { width: 5%; }  /* Work Arrangement */
+th:nth-child(10), td:nth-child(10) { width: 5%; }  /* Date Posted */
 
 @media (max-width: 768px) {
     h1 {
@@ -279,7 +298,7 @@ th:nth-child(10), td:nth-child(10) { width: 5%; }    /* Date Posted */
     {
         gap: 1px; /* Space between inputs */
     }
- 
+    
     .filter-container input,
     .filter-container select
     {
@@ -296,8 +315,8 @@ th:nth-child(10), td:nth-child(10) { width: 5%; }    /* Date Posted */
         font-size: 0.5em; /* Scale down font size */
         margin: 0; /* Remove default margin */
     }
-    #reset-filters 
-    {
+    #reset-filters,
+    #show-weekly-average-salary-btn { /* Apply styles to the new button */
         font-size: 0.5em; /* Scale down font size */
     }
 }
