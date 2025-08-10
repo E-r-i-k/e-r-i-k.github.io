@@ -232,7 +232,7 @@
         "salary": 80000.0,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-31T05:29:07Z",
         "link": "https://www.seek.com.au/job/79882217"
@@ -246,7 +246,7 @@
         "salary": 280000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T00:55:27Z",
         "link": "https://www.seek.com.au/job/79959539"
@@ -484,7 +484,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-01T02:03:06Z",
         "link": "https://www.seek.com.au/job/79899862"
@@ -498,7 +498,7 @@
         "salary": 145000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T03:04:53Z",
         "link": "https://www.seek.com.au/job/79963281"
@@ -624,7 +624,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-05T05:07:40Z",
         "link": "https://www.seek.com.au/job/79966826"
@@ -736,7 +736,7 @@
         "salary": 250000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-10-22T04:59:58Z",
         "link": "https://www.seek.com.au/job/79669561"
@@ -862,7 +862,7 @@
         "salary": 250000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-24T05:07:21Z",
         "link": "https://www.seek.com.au/job/79725515"
@@ -904,7 +904,7 @@
         "salary": 115000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-31T08:27:05Z",
         "link": "https://www.seek.com.au/job/79888388"
@@ -1142,7 +1142,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-29T07:02:48Z",
         "link": "https://www.seek.com.au/job/79832929"
@@ -1366,7 +1366,7 @@
         "salary": 78000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-30T05:06:09Z",
         "link": "https://www.seek.com.au/job/79855585"
@@ -1422,7 +1422,7 @@
         "salary": 190000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-01T01:46:45Z",
         "link": "https://www.seek.com.au/job/79899414"
@@ -1562,7 +1562,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-01T03:36:13Z",
         "link": "https://www.seek.com.au/job/79902960"
@@ -1674,7 +1674,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "casual/vacation",
+        "employment_type": "casual",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-30T11:17:59Z",
         "link": "https://www.seek.com.au/job/79866676"
@@ -1688,7 +1688,7 @@
         "salary": 110000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-18T00:10:07Z",
         "link": "https://www.seek.com.au/job/79587992"
@@ -1758,7 +1758,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T05:04:58Z",
         "link": "https://www.seek.com.au/job/79940883"
@@ -1870,7 +1870,7 @@
         "salary": 65000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-29T05:27:59Z",
         "link": "https://www.seek.com.au/job/79829037"
@@ -2094,7 +2094,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T05:00:08Z",
         "link": "https://www.seek.com.au/job/79940747"
@@ -2108,7 +2108,7 @@
         "salary": 100000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T03:18:22Z",
         "link": "https://www.seek.com.au/job/79937218"
@@ -2178,7 +2178,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-25T05:45:11Z",
         "link": "https://www.seek.com.au/job/79750976"
@@ -2346,7 +2346,7 @@
         "salary": 60000.0,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-31T08:41:06Z",
         "link": "https://www.seek.com.au/job/79888562"
@@ -2374,7 +2374,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-04T02:21:05Z",
         "link": "https://www.seek.com.au/job/79934991"
@@ -2542,7 +2542,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-05T03:38:54Z",
         "link": "https://www.seek.com.au/job/79964725"
@@ -2556,7 +2556,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-10-30T03:48:27Z",
         "link": "https://www.seek.com.au/job/79853496"
@@ -2570,7 +2570,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-04T06:42:46Z",
         "link": "https://www.seek.com.au/job/79944481"
@@ -2738,7 +2738,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-28T08:15:28Z",
         "link": "https://www.seek.com.au/job/79807026"
@@ -2808,7 +2808,7 @@
         "salary": 207000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-23T07:19:48Z",
         "link": "https://www.seek.com.au/job/79704465"
@@ -2990,7 +2990,7 @@
         "salary": 188250.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-22T00:39:05Z",
         "link": "https://www.seek.com.au/job/79652447"
@@ -3102,7 +3102,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-04T02:47:41Z",
         "link": "https://www.seek.com.au/job/79935962"
@@ -3368,7 +3368,7 @@
         "salary": 140000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T02:43:05Z",
         "link": "https://www.seek.com.au/job/79935785"
@@ -3382,7 +3382,7 @@
         "salary": 279560.56,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-04T03:37:10Z",
         "link": "https://www.seek.com.au/job/79938274"
@@ -3480,7 +3480,7 @@
         "salary": 156000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-05T03:04:05Z",
         "link": "https://www.seek.com.au/job/79963266"
@@ -3508,7 +3508,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-22T23:33:08Z",
         "link": "https://www.seek.com.au/job/79690002"
@@ -3620,7 +3620,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-10-16T02:09:28Z",
         "link": "https://www.seek.com.au/job/79533612"
@@ -3676,7 +3676,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T03:53:01Z",
         "link": "https://www.seek.com.au/job/79965200"
@@ -3802,7 +3802,7 @@
         "salary": 145000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-25T05:21:58Z",
         "link": "https://www.seek.com.au/job/79750394"
@@ -3816,7 +3816,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-22T23:27:06Z",
         "link": "https://www.seek.com.au/job/79689910"
@@ -3984,7 +3984,7 @@
         "salary": 190160.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T08:54:02Z",
         "link": "https://www.seek.com.au/job/79947485"
@@ -4026,7 +4026,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-21T23:12:04Z",
         "link": "https://www.seek.com.au/job/79650573"
@@ -4054,7 +4054,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-25T07:44:50Z",
         "link": "https://www.seek.com.au/job/79756158"
@@ -4180,7 +4180,7 @@
         "salary": 170000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-15T22:11:04Z",
         "link": "https://www.seek.com.au/job/79528264"
@@ -4264,7 +4264,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-21T03:24:39Z",
         "link": "https://www.seek.com.au/job/79631681"
@@ -4292,7 +4292,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-08T05:27:37Z",
         "link": "https://www.seek.com.au/job/79360228"
@@ -4334,7 +4334,7 @@
         "salary": 295000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-17T23:40:10Z",
         "link": "https://www.seek.com.au/job/79587434"
@@ -4432,7 +4432,7 @@
         "salary": 200000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-20T23:51:49Z",
         "link": "https://www.seek.com.au/job/79625619"
@@ -4488,7 +4488,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-29T02:59:29Z",
         "link": "https://www.seek.com.au/job/79823964"
@@ -4530,7 +4530,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-23T03:57:04Z",
         "link": "https://www.seek.com.au/job/79697798"
@@ -4628,7 +4628,7 @@
         "salary": 245000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-03T23:55:51Z",
         "link": "https://www.seek.com.au/job/79931100"
@@ -4656,7 +4656,7 @@
         "salary": 60000.0,
         "is_estimated_salary": 1,
         "experience_level": "junior",
-        "employment_type": "casual/vacation",
+        "employment_type": "casual",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-16T01:01:53Z",
         "link": "https://www.seek.com.au/job/79531626"
@@ -4670,7 +4670,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "casual/vacation",
+        "employment_type": "casual",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-30T22:26:35Z",
         "link": "https://www.seek.com.au/job/79872142"
@@ -4936,7 +4936,7 @@
         "salary": 170000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-10-10T09:42:51Z",
         "link": "https://www.seek.com.au/job/79426704"
@@ -5034,7 +5034,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-31T21:54:59Z",
         "link": "https://www.seek.com.au/job/79895218"
@@ -5062,7 +5062,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "casual/vacation",
+        "employment_type": "casual",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T00:50:17Z",
         "link": "https://www.seek.com.au/job/79959410"
@@ -5118,7 +5118,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-04T23:43:42Z",
         "link": "https://www.seek.com.au/job/79958039"
@@ -5132,7 +5132,7 @@
         "salary": 126000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-17T05:05:58Z",
         "link": "https://www.seek.com.au/job/79569835"
@@ -5160,7 +5160,7 @@
         "salary": 80000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-28T07:13:55Z",
         "link": "https://www.seek.com.au/job/79805762"
@@ -5580,7 +5580,7 @@
         "salary": 180000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-29T21:44:18Z",
         "link": "https://www.seek.com.au/job/79843405"
@@ -5622,7 +5622,7 @@
         "salary": 215860.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-28T06:27:01Z",
         "link": "https://www.seek.com.au/job/79802181"
@@ -5762,7 +5762,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-11T05:53:44Z",
         "link": "https://www.seek.com.au/job/79448409"
@@ -5818,7 +5818,7 @@
         "salary": 312500.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-01T02:11:44Z",
         "link": "https://www.seek.com.au/job/79900036"
@@ -5860,7 +5860,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-28T02:16:07Z",
         "link": "https://www.seek.com.au/job/79793048"
@@ -5902,7 +5902,7 @@
         "salary": 150000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T04:28:59Z",
         "link": "https://www.seek.com.au/job/79939946"
@@ -5972,7 +5972,7 @@
         "salary": 275800.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-18T01:13:12Z",
         "link": "https://www.seek.com.au/job/79589669"
@@ -6070,7 +6070,7 @@
         "salary": 170000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-09T22:02:34Z",
         "link": "https://www.seek.com.au/job/79406382"
@@ -6098,7 +6098,7 @@
         "salary": 171963.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T04:52:55Z",
         "link": "https://www.seek.com.au/job/79940548"
@@ -6112,7 +6112,7 @@
         "salary": 90000.0,
         "is_estimated_salary": 1,
         "experience_level": "junior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-11T03:48:07Z",
         "link": "https://www.seek.com.au/job/79444872"
@@ -6140,7 +6140,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-13T09:48:23Z",
         "link": "https://www.seek.com.au/job/79470307"
@@ -6168,7 +6168,7 @@
         "salary": 275000.0,
         "is_estimated_salary": 0,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-03T05:32:12Z",
         "link": "https://www.seek.com.au/job/79926271"
@@ -6196,7 +6196,7 @@
         "salary": 100000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-15T22:03:35Z",
         "link": "https://www.seek.com.au/job/79528177"
@@ -6224,7 +6224,7 @@
         "salary": 231600.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-04T02:53:23Z",
         "link": "https://www.seek.com.au/job/79936188"
@@ -6252,7 +6252,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-01T03:40:13Z",
         "link": "https://www.seek.com.au/job/79903206"
@@ -6406,7 +6406,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-10-13T23:45:59Z",
         "link": "https://www.seek.com.au/job/79473840"
@@ -6434,7 +6434,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-04T09:50:50Z",
         "link": "https://www.seek.com.au/job/79949640"
@@ -6462,7 +6462,7 @@
         "salary": 150000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T03:48:46Z",
         "link": "https://www.seek.com.au/job/79938645"
@@ -6476,7 +6476,7 @@
         "salary": 226800.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-04T06:21:42Z",
         "link": "https://www.seek.com.au/job/79943123"
@@ -6602,7 +6602,7 @@
         "salary": 157600.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-29T04:08:27Z",
         "link": "https://www.seek.com.au/job/79827000"
@@ -6686,7 +6686,7 @@
         "salary": 205000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-11T04:31:46Z",
         "link": "https://www.seek.com.au/job/79446200"
@@ -6742,7 +6742,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-01T04:26:05Z",
         "link": "https://www.seek.com.au/job/79904664"
@@ -6938,7 +6938,7 @@
         "salary": 170000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-21T22:41:23Z",
         "link": "https://www.seek.com.au/job/79650059"
@@ -7078,7 +7078,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-04T00:34:06Z",
         "link": "https://www.seek.com.au/job/79931917"
@@ -7092,7 +7092,7 @@
         "salary": 225000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-16T06:13:13Z",
         "link": "https://www.seek.com.au/job/79542494"
@@ -7106,7 +7106,7 @@
         "salary": 100000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-10-25T04:50:35Z",
         "link": "https://www.seek.com.au/job/79749633"
@@ -7120,7 +7120,7 @@
         "salary": 251000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-10-31T05:23:24Z",
         "link": "https://www.seek.com.au/job/79882096"
@@ -7176,7 +7176,7 @@
         "salary": 180000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-10-25T05:37:03Z",
         "link": "https://www.seek.com.au/job/79750765"
@@ -7218,7 +7218,7 @@
         "salary": 340160.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-01T00:01:41Z",
         "link": "https://www.seek.com.au/job/79897043"
@@ -7232,7 +7232,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-15T03:39:35Z",
         "link": "https://www.seek.com.au/job/79508052"
@@ -7330,7 +7330,7 @@
         "salary": 300000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-10-27T22:32:10Z",
         "link": "https://www.seek.com.au/job/79776475"
@@ -7652,7 +7652,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T23:28:24Z",
         "link": "https://www.seek.com.au/job/79984074"
@@ -7694,7 +7694,7 @@
         "salary": 105600.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T01:25:06Z",
         "link": "https://www.seek.com.au/job/79987011"
@@ -7750,7 +7750,7 @@
         "salary": 230000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-06T00:32:16Z",
         "link": "https://www.seek.com.au/job/79985486"
@@ -7778,7 +7778,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-06T06:16:06Z",
         "link": "https://www.seek.com.au/job/79998166"
@@ -7848,7 +7848,7 @@
         "salary": 295000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-06T03:59:32Z",
         "link": "https://www.seek.com.au/job/79994288"
@@ -7890,7 +7890,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T23:24:48Z",
         "link": "https://www.seek.com.au/job/79984018"
@@ -7918,7 +7918,7 @@
         "salary": 226800.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T01:39:00Z",
         "link": "https://www.seek.com.au/job/79987447"
@@ -7988,7 +7988,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "casual/vacation",
+        "employment_type": "casual",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T05:51:03Z",
         "link": "https://www.seek.com.au/job/79997254"
@@ -8016,7 +8016,7 @@
         "salary": 95000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T05:01:27Z",
         "link": "https://www.seek.com.au/job/79995984"
@@ -8030,7 +8030,7 @@
         "salary": 145375.5,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T06:14:15Z",
         "link": "https://www.seek.com.au/job/79998108"
@@ -8058,7 +8058,7 @@
         "salary": 251000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-05T23:52:47Z",
         "link": "https://www.seek.com.au/job/79984442"
@@ -8170,7 +8170,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-29T00:02:27Z",
         "link": "https://www.seek.com.au/job/79818678"
@@ -8254,7 +8254,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-23T03:56:05Z",
         "link": "https://www.seek.com.au/job/79697760"
@@ -8268,7 +8268,7 @@
         "salary": 220400.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-05T23:57:05Z",
         "link": "https://www.seek.com.au/job/79984526"
@@ -8282,7 +8282,7 @@
         "salary": 200000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T09:42:30Z",
         "link": "https://www.seek.com.au/job/80005340"
@@ -8324,7 +8324,7 @@
         "salary": 172860.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-31T06:08:38Z",
         "link": "https://www.seek.com.au/job/79883310"
@@ -8338,7 +8338,7 @@
         "salary": null,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "casual/vacation",
+        "employment_type": "casual",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T05:56:49Z",
         "link": "https://www.seek.com.au/job/79997427"
@@ -8380,7 +8380,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-05T22:41:27Z",
         "link": "https://www.seek.com.au/job/79983369"
@@ -8422,7 +8422,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-04T06:14:12Z",
         "link": "https://www.seek.com.au/job/79942929"
@@ -8534,7 +8534,7 @@
         "salary": 189300.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-05T23:37:19Z",
         "link": "https://www.seek.com.au/job/79984218"
@@ -8716,7 +8716,7 @@
         "salary": 95000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-10-31T12:00:00Z",
         "link": "https://www.seek.com.au/job/79915490"
@@ -8828,7 +8828,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T02:13:10Z",
         "link": "https://www.seek.com.au/job/80018588"
@@ -8940,7 +8940,7 @@
         "salary": 115000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T22:19:19Z",
         "link": "https://www.seek.com.au/job/80013152"
@@ -9052,7 +9052,7 @@
         "salary": 200500.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-07T06:05:35Z",
         "link": "https://www.seek.com.au/job/80027667"
@@ -9066,7 +9066,7 @@
         "salary": 210760.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T03:08:36Z",
         "link": "https://www.seek.com.au/job/80020596"
@@ -9094,7 +9094,7 @@
         "salary": 280000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-07T03:53:41Z",
         "link": "https://www.seek.com.au/job/80024043"
@@ -9122,7 +9122,7 @@
         "salary": 295000.0,
         "is_estimated_salary": 1,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-06T22:36:09Z",
         "link": "https://www.seek.com.au/job/80013352"
@@ -9136,7 +9136,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T06:16:05Z",
         "link": "https://www.seek.com.au/job/80028041"
@@ -9150,7 +9150,7 @@
         "salary": 95000.0,
         "is_estimated_salary": 1,
         "experience_level": "junior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-06T04:22:21Z",
         "link": "https://www.seek.com.au/job/79997696"
@@ -9248,7 +9248,7 @@
         "salary": 145000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-06T22:40:50Z",
         "link": "https://www.seek.com.au/job/80013400"
@@ -9332,7 +9332,7 @@
         "salary": 251000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T09:32:10Z",
         "link": "https://www.seek.com.au/job/80034158"
@@ -9430,7 +9430,7 @@
         "salary": 280000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-07T04:32:32Z",
         "link": "https://www.seek.com.au/job/80025209"
@@ -9472,7 +9472,7 @@
         "salary": 300000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-06T21:28:39Z",
         "link": "https://www.seek.com.au/job/80011132"
@@ -9486,7 +9486,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-07T02:45:06Z",
         "link": "https://www.seek.com.au/job/80019622"
@@ -9528,7 +9528,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-07T03:49:09Z",
         "link": "https://www.seek.com.au/job/80023810"
@@ -9682,7 +9682,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T05:17:07Z",
         "link": "https://www.seek.com.au/job/80054427"
@@ -9724,7 +9724,7 @@
         "salary": 160480.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T05:36:37Z",
         "link": "https://www.seek.com.au/job/80054946"
@@ -9780,7 +9780,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T21:32:08Z",
         "link": "https://www.seek.com.au/job/80042541"
@@ -9892,7 +9892,7 @@
         "salary": 255000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T04:06:54Z",
         "link": "https://www.seek.com.au/job/80052456"
@@ -9906,7 +9906,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-08T00:34:06Z",
         "link": "https://www.seek.com.au/job/80045608"
@@ -9990,7 +9990,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T02:07:37Z",
         "link": "https://www.seek.com.au/job/80048508"
@@ -10088,7 +10088,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-08T01:18:46Z",
         "link": "https://www.seek.com.au/job/80047019"
@@ -10116,7 +10116,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T22:21:05Z",
         "link": "https://www.seek.com.au/job/80043073"
@@ -10158,7 +10158,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T05:34:05Z",
         "link": "https://www.seek.com.au/job/80054890"
@@ -10200,7 +10200,7 @@
         "salary": 105000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-07T21:11:09Z",
         "link": "https://www.seek.com.au/job/80042246"
@@ -10256,7 +10256,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T05:07:05Z",
         "link": "https://www.seek.com.au/job/80054204"
@@ -10452,7 +10452,7 @@
         "salary": 150750.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-08T04:00:08Z",
         "link": "https://www.seek.com.au/job/80052215"
@@ -10578,7 +10578,7 @@
         "salary": 260000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-07T22:41:15Z",
         "link": "https://www.seek.com.au/job/80043316"
@@ -10620,7 +10620,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T06:41:23Z",
         "link": "https://www.seek.com.au/job/80058028"
@@ -10662,7 +10662,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T11:19:42Z",
         "link": "https://www.seek.com.au/job/80064794"
@@ -10676,7 +10676,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-08T05:56:41Z",
         "link": "https://www.seek.com.au/job/80055535"
@@ -10690,7 +10690,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T10:59:14Z",
         "link": "https://www.seek.com.au/job/80064639"
@@ -10774,7 +10774,7 @@
         "salary": 100400.0,
         "is_estimated_salary": 0,
         "experience_level": "junior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-08T06:07:01Z",
         "link": "https://www.seek.com.au/job/80056220"
@@ -10802,7 +10802,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-10T00:45:54Z",
         "link": "https://www.seek.com.au/job/80081441"
@@ -10872,7 +10872,7 @@
         "salary": 200160.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-08T08:58:42Z",
         "link": "https://www.seek.com.au/job/80061546"
@@ -11194,7 +11194,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-11T02:54:39Z",
         "link": "https://www.seek.com.au/job/80092352"
@@ -11208,7 +11208,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-11T04:47:10Z",
         "link": "https://www.seek.com.au/job/80096690"
@@ -11222,7 +11222,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-11T04:41:06Z",
         "link": "https://www.seek.com.au/job/80096517"
@@ -11516,7 +11516,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-11T05:24:52Z",
         "link": "https://www.seek.com.au/job/80097637"
@@ -11656,7 +11656,7 @@
         "salary": 251000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-10T23:51:49Z",
         "link": "https://www.seek.com.au/job/80087116"
@@ -11698,7 +11698,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-11T05:30:06Z",
         "link": "https://www.seek.com.au/job/80097737"
@@ -11726,7 +11726,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-11T02:00:17Z",
         "link": "https://www.seek.com.au/job/80090495"
@@ -11740,7 +11740,7 @@
         "salary": 125500.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-10T23:10:42Z",
         "link": "https://www.seek.com.au/job/80086476"
@@ -11782,7 +11782,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-10T23:59:27Z",
         "link": "https://www.seek.com.au/job/80087264"
@@ -11810,7 +11810,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-10T22:56:34Z",
         "link": "https://www.seek.com.au/job/80086248"
@@ -11852,7 +11852,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-11T02:53:05Z",
         "link": "https://www.seek.com.au/job/80092294"
@@ -11866,7 +11866,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-11T08:26:06Z",
         "link": "https://www.seek.com.au/job/80103019"
@@ -12048,7 +12048,7 @@
         "salary": 95000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-11T22:26:11Z",
         "link": "https://www.seek.com.au/job/80111735"
@@ -12384,7 +12384,7 @@
         "salary": 213850.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-12T05:54:07Z",
         "link": "https://www.seek.com.au/job/80125807"
@@ -12552,7 +12552,7 @@
         "salary": 295000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T04:34:05Z",
         "link": "https://www.seek.com.au/job/80123758"
@@ -12580,7 +12580,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T03:58:05Z",
         "link": "https://www.seek.com.au/job/80122658"
@@ -12776,7 +12776,7 @@
         "salary": 275200.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T02:45:21Z",
         "link": "https://www.seek.com.au/job/80118302"
@@ -12930,7 +12930,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T04:48:41Z",
         "link": "https://www.seek.com.au/job/80151328"
@@ -13112,7 +13112,7 @@
         "salary": 140000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-12T19:46:27Z",
         "link": "https://www.seek.com.au/job/80138394"
@@ -13224,7 +13224,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-13T09:39:46Z",
         "link": "https://www.seek.com.au/job/80160150"
@@ -13364,7 +13364,7 @@
         "salary": 295000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T04:34:27Z",
         "link": "https://www.seek.com.au/job/80150914"
@@ -13420,7 +13420,7 @@
         "salary": 300000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T01:07:41Z",
         "link": "https://www.seek.com.au/job/80143337"
@@ -13448,7 +13448,7 @@
         "salary": 106989.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T04:51:17Z",
         "link": "https://www.seek.com.au/job/80151405"
@@ -13462,7 +13462,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T06:33:05Z",
         "link": "https://www.seek.com.au/job/80154556"
@@ -13476,7 +13476,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-11T22:40:44Z",
         "link": "https://www.seek.com.au/job/80111960"
@@ -13518,7 +13518,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-11T17:00:48Z",
         "link": "https://www.seek.com.au/job/80105336"
@@ -13546,7 +13546,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-13T10:35:09Z",
         "link": "https://www.seek.com.au/job/80160896"
@@ -13560,7 +13560,7 @@
         "salary": 126021.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-13T01:48:09Z",
         "link": "https://www.seek.com.au/job/80144432"
@@ -13672,7 +13672,7 @@
         "salary": 276800.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-13T05:58:35Z",
         "link": "https://www.seek.com.au/job/80153093"
@@ -13714,7 +13714,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T01:27:06Z",
         "link": "https://www.seek.com.au/job/80115844"
@@ -13882,7 +13882,7 @@
         "salary": 200000.0,
         "is_estimated_salary": 0,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-11T22:18:05Z",
         "link": "https://www.seek.com.au/job/80111615"
@@ -13910,7 +13910,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T02:06:37Z",
         "link": "https://www.seek.com.au/job/80144969"
@@ -13938,7 +13938,7 @@
         "salary": 150775.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-13T06:43:26Z",
         "link": "https://www.seek.com.au/job/80155670"
@@ -13980,7 +13980,7 @@
         "salary": 226000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-13T02:37:11Z",
         "link": "https://www.seek.com.au/job/80145856"
@@ -14036,7 +14036,7 @@
         "salary": 147200.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-12T23:11:39Z",
         "link": "https://www.seek.com.au/job/80140971"
@@ -14050,7 +14050,7 @@
         "salary": 182500.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T21:49:08Z",
         "link": "https://www.seek.com.au/job/80139942"
@@ -14064,7 +14064,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-13T04:30:44Z",
         "link": "https://www.seek.com.au/job/80150787"
@@ -14148,7 +14148,7 @@
         "salary": 95000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-13T02:46:19Z",
         "link": "https://www.seek.com.au/job/80146139"
@@ -14162,7 +14162,7 @@
         "salary": 213850.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-14T04:45:46Z",
         "link": "https://www.seek.com.au/job/80177256"
@@ -14232,7 +14232,7 @@
         "salary": 160600.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-13T23:37:05Z",
         "link": "https://www.seek.com.au/job/80168518"
@@ -14316,7 +14316,7 @@
         "salary": 160000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-14T04:28:32Z",
         "link": "https://www.seek.com.au/job/80176850"
@@ -14400,7 +14400,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-14T00:14:41Z",
         "link": "https://www.seek.com.au/job/80169220"
@@ -14498,7 +14498,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-14T05:15:32Z",
         "link": "https://www.seek.com.au/job/80177931"
@@ -14638,7 +14638,7 @@
         "salary": 170000.0,
         "is_estimated_salary": 1,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-14T03:43:44Z",
         "link": "https://www.seek.com.au/job/80175568"
@@ -14764,7 +14764,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-14T07:12:20Z",
         "link": "https://www.seek.com.au/job/80183123"
@@ -14820,7 +14820,7 @@
         "salary": 251000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-14T00:20:06Z",
         "link": "https://www.seek.com.au/job/80169330"
@@ -14876,7 +14876,7 @@
         "salary": 260000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-14T04:25:35Z",
         "link": "https://www.seek.com.au/job/80176769"
@@ -15100,7 +15100,7 @@
         "salary": 245000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-14T04:16:21Z",
         "link": "https://www.seek.com.au/job/80176557"
@@ -15114,7 +15114,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-14T06:05:14Z",
         "link": "https://www.seek.com.au/job/80179171"
@@ -15142,7 +15142,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-12T10:39:18Z",
         "link": "https://www.seek.com.au/job/80134209"
@@ -15198,7 +15198,7 @@
         "salary": 95000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-15T23:41:19Z",
         "link": "https://www.seek.com.au/job/80221100"
@@ -15338,7 +15338,7 @@
         "salary": 125000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-15T02:52:58Z",
         "link": "https://www.seek.com.au/job/80200606"
@@ -15366,7 +15366,7 @@
         "salary": 145000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-15T06:37:48Z",
         "link": "https://www.seek.com.au/job/80208298"
@@ -15506,7 +15506,7 @@
         "salary": 145000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-15T06:15:48Z",
         "link": "https://www.seek.com.au/job/80207071"
@@ -15618,7 +15618,7 @@
         "salary": 240000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-15T03:56:29Z",
         "link": "https://www.seek.com.au/job/80203116"
@@ -15716,7 +15716,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-16T07:15:49Z",
         "link": "https://www.seek.com.au/job/80223392"
@@ -15814,7 +15814,7 @@
         "salary": 204000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-10-17T14:54:25Z",
         "link": "https://www.seek.com.au/job/79580951"
@@ -15954,7 +15954,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-15T03:49:39Z",
         "link": "https://www.seek.com.au/job/80202873"
@@ -16080,7 +16080,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-15T04:28:18Z",
         "link": "https://www.seek.com.au/job/80204035"
@@ -16374,7 +16374,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-19T07:45:13Z",
         "link": "https://www.seek.com.au/job/80274390"
@@ -16752,7 +16752,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-19T00:38:53Z",
         "link": "https://www.seek.com.au/job/80260025"
@@ -16794,7 +16794,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "lead",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-19T07:24:20Z",
         "link": "https://www.seek.com.au/job/80273952"
@@ -16850,7 +16850,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-19T00:08:14Z",
         "link": "https://www.seek.com.au/job/80258430"
@@ -16864,7 +16864,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T06:13:53Z",
         "link": "https://www.seek.com.au/job/80271062"
@@ -16878,7 +16878,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-18T01:53:23Z",
         "link": "https://www.seek.com.au/job/80234973"
@@ -16906,7 +16906,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T06:14:44Z",
         "link": "https://www.seek.com.au/job/80271082"
@@ -16920,7 +16920,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T06:16:04Z",
         "link": "https://www.seek.com.au/job/80271126"
@@ -16934,7 +16934,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T06:15:08Z",
         "link": "https://www.seek.com.au/job/80271092"
@@ -16948,7 +16948,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T06:15:43Z",
         "link": "https://www.seek.com.au/job/80271111"
@@ -16990,7 +16990,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-19T06:10:42Z",
         "link": "https://www.seek.com.au/job/80270978"
@@ -17018,7 +17018,7 @@
         "salary": 175700.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-18T23:58:09Z",
         "link": "https://www.seek.com.au/job/80258175"
@@ -17032,7 +17032,7 @@
         "salary": 145000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-18T02:43:53Z",
         "link": "https://www.seek.com.au/job/80236463"
@@ -17074,7 +17074,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-18T22:54:30Z",
         "link": "https://www.seek.com.au/job/80257152"
@@ -17158,7 +17158,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-18T03:49:06Z",
         "link": "https://www.seek.com.au/job/80239882"
@@ -17172,7 +17172,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-19T03:28:34Z",
         "link": "https://www.seek.com.au/job/80266147"
@@ -17284,7 +17284,7 @@
         "salary": 295000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-19T05:40:09Z",
         "link": "https://www.seek.com.au/job/80269958"
@@ -17368,7 +17368,7 @@
         "salary": 170000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T00:04:33Z",
         "link": "https://www.seek.com.au/job/80258270"
@@ -17746,7 +17746,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T04:24:35Z",
         "link": "https://www.seek.com.au/job/80295898"
@@ -17802,7 +17802,7 @@
         "salary": 280000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T00:09:15Z",
         "link": "https://www.seek.com.au/job/80287488"
@@ -17816,7 +17816,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-20T06:24:39Z",
         "link": "https://www.seek.com.au/job/80299152"
@@ -17858,7 +17858,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T23:17:44Z",
         "link": "https://www.seek.com.au/job/80286443"
@@ -17872,7 +17872,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T04:44:19Z",
         "link": "https://www.seek.com.au/job/80296356"
@@ -17886,7 +17886,7 @@
         "salary": 226800.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-20T06:35:07Z",
         "link": "https://www.seek.com.au/job/80299876"
@@ -17900,7 +17900,7 @@
         "salary": 151500.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-19T11:53:15Z",
         "link": "https://www.seek.com.au/job/80278825"
@@ -17928,7 +17928,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T04:16:34Z",
         "link": "https://www.seek.com.au/job/80295667"
@@ -17956,7 +17956,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T00:58:45Z",
         "link": "https://www.seek.com.au/job/80288791"
@@ -17984,7 +17984,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-20T07:31:56Z",
         "link": "https://www.seek.com.au/job/80301261"
@@ -17998,7 +17998,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-20T00:21:03Z",
         "link": "https://www.seek.com.au/job/80287707"
@@ -18054,7 +18054,7 @@
         "salary": 240400.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-20T06:12:08Z",
         "link": "https://www.seek.com.au/job/80298743"
@@ -18082,7 +18082,7 @@
         "salary": 225000.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-15T05:48:08Z",
         "link": "https://www.seek.com.au/job/80206061"
@@ -18138,7 +18138,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-10-22T05:05:43Z",
         "link": "https://www.seek.com.au/job/79669722"
@@ -18152,7 +18152,7 @@
         "salary": 280000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-20T03:18:46Z",
         "link": "https://www.seek.com.au/job/80293064"
@@ -18334,7 +18334,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-21T08:21:31Z",
         "link": "https://www.seek.com.au/job/80324141"
@@ -18362,7 +18362,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-22T00:35:18Z",
         "link": "https://www.seek.com.au/job/80343450"
@@ -18446,7 +18446,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-21T22:02:14Z",
         "link": "https://www.seek.com.au/job/80340479"
@@ -18558,7 +18558,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-21T22:02:20Z",
         "link": "https://www.seek.com.au/job/80340483"
@@ -18572,7 +18572,7 @@
         "salary": 130000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-21T22:02:19Z",
         "link": "https://www.seek.com.au/job/80340482"
@@ -18642,7 +18642,7 @@
         "salary": 200800.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T21:35:58Z",
         "link": "https://www.seek.com.au/job/80312346"
@@ -18670,7 +18670,7 @@
         "salary": 155000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-20T22:06:32Z",
         "link": "https://www.seek.com.au/job/80312897"
@@ -18740,7 +18740,7 @@
         "salary": 172860.0,
         "is_estimated_salary": 0,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-21T06:39:56Z",
         "link": "https://www.seek.com.au/job/80327188"
@@ -18810,7 +18810,7 @@
         "salary": 175000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-22T04:22:49Z",
         "link": "https://www.seek.com.au/job/80337169"
@@ -18824,7 +18824,7 @@
         "salary": null,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T22:20:08Z",
         "link": "https://www.seek.com.au/job/80313022"
@@ -18866,7 +18866,7 @@
         "salary": 220000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "remote",
         "date_posted": "2024-11-21T21:25:52Z",
         "link": "https://www.seek.com.au/job/80340094"
@@ -18880,7 +18880,7 @@
         "salary": 205320.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-22T06:06:43Z",
         "link": "https://www.seek.com.au/job/80354180"
@@ -18964,7 +18964,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-21T03:57:10Z",
         "link": "https://www.seek.com.au/job/80322743"
@@ -19160,7 +19160,7 @@
         "salary": 270000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-21T06:46:19Z",
         "link": "https://www.seek.com.au/job/80327440"
@@ -19174,7 +19174,7 @@
         "salary": 225000.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "hybrid",
         "date_posted": "2024-11-21T21:39:48Z",
         "link": "https://www.seek.com.au/job/80340309"
@@ -19496,7 +19496,7 @@
         "salary": 195000.0,
         "is_estimated_salary": 1,
         "experience_level": "mid",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "n/a",
         "date_posted": "2024-11-21T05:35:06Z",
         "link": "https://www.seek.com.au/job/80325101"
@@ -19566,7 +19566,7 @@
         "salary": 142568.0,
         "is_estimated_salary": 0,
         "experience_level": "senior",
-        "employment_type": "contract/temp",
+        "employment_type": "contract",
         "work_arrangement": "on-site",
         "date_posted": "2024-11-20T04:29:36Z",
         "link": "https://www.seek.com.au/job/80296024"
@@ -58373,7 +58373,7 @@
         "location": "Sydney NSW",
         "salary": 120000.0,
         "is_estimated_salary": 1,
-        "experience_level": "early-career",
+        "experience_level": "junior",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-07-15 16:14:08.345923",
@@ -58513,7 +58513,7 @@
         "location": "Sydney NSW",
         "salary": 120000.0,
         "is_estimated_salary": 1,
-        "experience_level": "early-career",
+        "experience_level": "junior",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-07-14 16:15:58.625360",
@@ -59801,7 +59801,7 @@
         "location": "Sydney NSW",
         "salary": 120000.0,
         "is_estimated_salary": 1,
-        "experience_level": "early-career",
+        "experience_level": "junior",
         "employment_type": "full-time",
         "work_arrangement": "on-site",
         "date_posted": "2025-06-30 16:34:41.860974",
@@ -59983,7 +59983,7 @@
         "location": "Coolangatta,Gold Coast QLD",
         "salary": 100000.0,
         "is_estimated_salary": 0,
-        "experience_level": "mid-to-senior",
+        "experience_level": "mid",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-07-17 16:37:38.530560",
@@ -61621,7 +61621,7 @@
         "location": "Canberra ACT",
         "salary": 90000.0,
         "is_estimated_salary": 1,
-        "experience_level": "junior,mid",
+        "experience_level": "junior",
         "employment_type": "full-time",
         "work_arrangement": "on-site",
         "date_posted": "2025-07-21 16:59:48.139894",
@@ -61692,7 +61692,7 @@
         "salary": 120000.0,
         "is_estimated_salary": 1,
         "experience_level": "senior",
-        "employment_type": "full-time/contract",
+        "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-07-17 17:00:55.538555",
         "link": "https://www.seek.com.au/job/85833997"
@@ -62601,7 +62601,7 @@
         "location": "Forest Hill,Melbourne VIC",
         "salary": 92000.0,
         "is_estimated_salary": 0,
-        "experience_level": "junior/mid",
+        "experience_level": "junior",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-07-29 16:17:45.006129",
@@ -64519,7 +64519,7 @@
         "location": "Perth WA",
         "salary": 127500.0,
         "is_estimated_salary": 0,
-        "experience_level": "mid-senior",
+        "experience_level": "senior",
         "employment_type": "full-time",
         "work_arrangement": "hybrid",
         "date_posted": "2025-07-29 19:58:52.088816",
