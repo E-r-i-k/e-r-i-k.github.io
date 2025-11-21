@@ -6,23 +6,26 @@
     <title>e-r-i-k.github.io</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <a href="https://github.com/E-r-i-k" target="_blank">
-                <img src="github-icon.svg" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;" class="github-icon">
+                <img src="github-icon.svg" alt="GitHub" class="github-icon">
                 GitHub Profile
             </a>
         </nav>
     </header>
     <div class="ai-icon-container">
-        <img src="ai-icon.svg" alt="Powered by A.I." title="Powered by A.I." style="width: 50px; height: 50px"  class="invert-icon">
+        <img src="ai-icon.svg" alt="Powered by A.I." title="Powered by A.I." class="invert-icon">
     </div>
     <div class="container">
         <h1>Seek Software Job Listings</h1>
 
-        <div>
+        <div class="card chart-container">
             <canvas id="salaryHistogram" width="400" height="400"></canvas>
             <canvas id="weeklyAverageSalaryChart" width="800" height="400"></canvas>
         </div>
