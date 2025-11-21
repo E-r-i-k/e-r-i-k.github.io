@@ -155,7 +155,7 @@ header a:hover .github-icon {
 
 /* Main Container */
 .container {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 3rem 2rem;
     animation: fadeIn 0.8s ease-out;
@@ -195,8 +195,9 @@ h1 {
 .card:hover,
 .salary-stats:hover {
     transform: translateY(-2px);
-    box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.4);
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    background-color: rgba(15, 23, 42, 0.9);
+    box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.15);
 }
 
 /* Charts */
@@ -216,14 +217,16 @@ canvas {
 .salary-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     margin-bottom: 2.5rem;
 }
 
 .salary-stats p {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     font-size: 0.9rem;
     color: var(--text-secondary);
     font-weight: 500;
@@ -239,11 +242,11 @@ canvas {
 
 /* Filters */
 .filter-container {
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2.5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 0.5rem;
 }
 
 .filter-container input[type="text"],
@@ -374,7 +377,7 @@ button:active {
 
 table {
     width: 100%;
-    min-width: 1200px;
+    min-width: 1300px;
     border-collapse: collapse;
     font-size: 0.85rem;
     table-layout: auto;
@@ -382,7 +385,7 @@ table {
 
 th,
 td {
-    padding: 1.25rem 1.5rem;
+    padding: 0.25rem 1.0rem;
     text-align: left;
     border-bottom: 1px solid rgba(148, 163, 184, 0.1);
     word-wrap: break-word;
