@@ -328,11 +328,39 @@ document.addEventListener("DOMContentLoaded", () => {
                                     return `Jobs: ${context.raw}`;
                                 }
                             }
+                        },
+                        datalabels: {
+                            anchor: 'end',
+                            align: 'top',
+                            font: {
+                                size: 10,
+                                weight: 'bold'
+                            },
+                            color: '#e0e0e0'
                         }
                     },
                     responsive: true,
                     maintainAspectRatio: false
-                }
+                },
+                plugins: [{
+                    id: 'customDataLabels',
+                    afterDatasetsDraw(chart) {
+                        const { ctx } = chart;
+                        chart.data.datasets.forEach((dataset, i) => {
+                            const meta = chart.getDatasetMeta(i);
+                            meta.data.forEach((bar, index) => {
+                                const value = dataset.data[index];
+                                if (value > 0) {
+                                    ctx.fillStyle = '#e0e0e0';
+                                    ctx.font = 'bold 10px Inter';
+                                    ctx.textAlign = 'center';
+                                    ctx.textBaseline = 'bottom';
+                                    ctx.fillText(value, bar.x, bar.y - 5);
+                                }
+                            });
+                        });
+                    }
+                }]
             });
         } else {
             salaryChart.data.labels = labels;
@@ -555,6 +583,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 (salaryEstimateValue === job.is_estimated_salary || !job.is_estimated_salary) &&
                 (!daysAgo || daysDifference <= daysAgo);
         });
+
+        // Reapply the current sort if one was applied
+        if (currentSortColumnIndex !== null) {
+            filteredJobs.sort((a, b) => compareJobs(a, b, currentSortColumnIndex));
+            if (currentSortOrder === 'desc') filteredJobs.reverse();
+        }
 
         // Reset pagination and display filtered jobs
         currentDisplayIndex = 0;
