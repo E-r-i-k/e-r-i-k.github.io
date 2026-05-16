@@ -210,7 +210,6 @@ h1 {
     border: 1px solid rgba(148, 163, 184, 0.15);
     position: relative;
 }
-}
 
 .card:hover,
 .salary-stats:hover {
@@ -270,7 +269,7 @@ canvas {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
     font-weight: 500;
     background: linear-gradient(135deg, rgba(45, 212, 191, 0.05), rgba(124, 58, 237, 0.05));
@@ -532,7 +531,7 @@ tbody tr {
 tbody tr:hover {
     background: linear-gradient(90deg, rgba(45, 212, 191, 0.08), rgba(45, 212, 191, 0.03));
     border-bottom-color: rgba(45, 212, 191, 0.2);
-    transform: scaleY(1.02);
+    border-left: 3px solid var(--accent-color);
     box-shadow: inset 0 0 15px rgba(45, 212, 191, 0.05);
 }
 
@@ -695,4 +694,80 @@ td:nth-child(10) {
     .filter-container {
         padding: 1.5rem;
     }
+}
+
+/* Salary source badges */
+.badge {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.badge-listed {
+    background: rgba(45, 212, 191, 0.12);
+    border: 1px solid rgba(45, 212, 191, 0.4);
+    color: var(--accent-color);
+}
+
+.badge-est {
+    background: rgba(251, 191, 36, 0.1);
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    color: #fbbf24;
+}
+
+/* Work arrangement summary badges */
+.arrangement-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.arr-badge {
+    padding: 0.3rem 0.85rem;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    color: var(--text-secondary);
+    transition: border-color 0.2s;
+}
+
+.arr-badge strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.arr-badge-remote {
+    border-color: rgba(45, 212, 191, 0.25);
+    color: var(--accent-color);
+}
+
+.arr-badge-hybrid {
+    border-color: rgba(167, 139, 250, 0.25);
+    color: #a78bfa;
+}
+
+.arr-badge-on-site {
+    border-color: rgba(96, 165, 250, 0.25);
+    color: #60a5fa;
+}
+
+/* Chart section title */
+.chart-title {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-secondary);
+    pointer-events: none;
 }

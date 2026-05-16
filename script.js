@@ -1,5 +1,6 @@
 let salaryChart; // Variable to hold the chart instance
 let weeklyAverageSalaryChart; // New variable for the weekly average chart
+let jobTypeChart; // Chart for job type distribution
 let allJobs = []; // Make allJobs accessible globally
 let currentSortColumnIndex = null; // Track which column is sorted
 let currentSortOrder = 'asc'; // Track current sort order
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const maxSalaryElem = document.getElementById('max-salary');
     const averageSalaryElem = document.getElementById('average-salary');
     const medianSalaryElem = document.getElementById('median-salary');
+    const listedPctElem = document.getElementById('listed-pct');
 
     const resetButton = document.getElementById('reset-filters'); // Get reset button
     const showWeeklyAverageSalaryBtn = document.getElementById('show-weekly-average-salary-btn'); // Get the new button
@@ -33,8 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const headers = table.querySelectorAll("th");
     const scrollToBottomBtn = document.getElementById('scroll-to-bottom-btn');
 
-    // Initially hide the weekly average salary chart
+    let chartView = 'histogram';
+    // Initially hide non-histogram charts
     document.getElementById('weeklyAverageSalaryChart').style.display = 'none';
+    document.getElementById('jobTypeChart').style.display = 'none';
 
     headers.forEach((header, index) => {
         header.addEventListener("click", () => {
@@ -103,23 +107,37 @@ document.addEventListener("DOMContentLoaded", () => {
             populateFilters(allJobs);
             filterJobs(allJobs);
             
-            // Add event listener for the new button
+            // Add event listener for the chart toggle button (3-state cycle)
             showWeeklyAverageSalaryBtn.addEventListener('click', () => {
-                const salaryHistogram = document.getElementById('salaryHistogram');
+                const salaryHistogramCanvas = document.getElementById('salaryHistogram');
                 const weeklyAverageSalaryChartCanvas = document.getElementById('weeklyAverageSalaryChart');
+                const jobTypeChartCanvas = document.getElementById('jobTypeChart');
+                const chartTitleElem = document.getElementById('chart-title');
 
-                if (weeklyAverageSalaryChartCanvas.style.display === 'none') {
-                    // Show the weekly average chart and hide the histogram
+                if (chartView === 'histogram') {
+                    chartView = 'weekly';
+                    salaryHistogramCanvas.style.display = 'none';
                     weeklyAverageSalaryChartCanvas.style.display = 'block';
-                    salaryHistogram.style.display = 'none';
-                    showWeeklyAverageSalaryBtn.textContent = 'Show Salary Histogram';
-                    createWeeklyAverageSalaryChart(filteredJobs); // Pass filteredJobs
-                } else {
-                    // Show the histogram and hide the weekly average chart
+                    jobTypeChartCanvas.style.display = 'none';
+                    showWeeklyAverageSalaryBtn.textContent = 'Show Job Types';
+                    chartTitleElem.textContent = 'Weekly Average Salary';
+                    createWeeklyAverageSalaryChart(filteredJobs);
+                } else if (chartView === 'weekly') {
+                    chartView = 'jobtype';
+                    salaryHistogramCanvas.style.display = 'none';
                     weeklyAverageSalaryChartCanvas.style.display = 'none';
-                    salaryHistogram.style.display = 'block';
+                    jobTypeChartCanvas.style.display = 'block';
+                    showWeeklyAverageSalaryBtn.textContent = 'Show Salary Histogram';
+                    chartTitleElem.textContent = 'Jobs by Type';
+                    createJobTypeChart(filteredJobs);
+                } else {
+                    chartView = 'histogram';
+                    salaryHistogramCanvas.style.display = 'block';
+                    weeklyAverageSalaryChartCanvas.style.display = 'none';
+                    jobTypeChartCanvas.style.display = 'none';
                     showWeeklyAverageSalaryBtn.textContent = 'Show Weekly Average Salary';
-                    createSalaryHistogram(filteredJobs); // Re-render histogram with filtered data
+                    chartTitleElem.textContent = 'Salary Distribution';
+                    createSalaryHistogram(filteredJobs);
                 }
             });
 
@@ -214,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <td>${job.company}</td>
                 <td>${job.location}</td>
                 <td>${(job.salary === null || isNaN(job.salary) ? '' : "$" + (job.salary / 1000).toFixed(0) + "k")}</td>
-                <td>${job.is_estimated_salary ? '' : '✔'}</td>
+                <td>${job.salary !== null && !isNaN(job.salary) ? (job.is_estimated_salary ? '<span class="badge badge-est">Est.</span>' : '<span class="badge badge-listed">Listed</span>') : ''}</td>
                 <td>${job.job_type}</td>
                 <td>${job.experience_level}</td>
                 <td>${job.employment_type}</td>
@@ -249,6 +267,10 @@ document.addEventListener("DOMContentLoaded", () => {
             averageSalaryElem.textContent = 'N/A';
             medianSalaryElem.textContent = 'N/A';
         }
+
+        const listedCount = jobs.filter(j => j.salary !== null && !isNaN(parseFloat(j.salary)) && !j.is_estimated_salary).length;
+        const pct = jobs.length ? Math.round(listedCount / jobs.length * 100) : 0;
+        listedPctElem.textContent = `${listedCount} (${pct}%)`;
     }
 
     function calculateMedian(values) {
@@ -258,62 +280,77 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createSalaryHistogram(jobData) {
-        const salaries = jobData.map(job => job.salary).filter(salary => salary !== null && salary !== 'null');
-        
-        const salaryNumbers = salaries.map(salary => salary / 1000).filter(num => !isNaN(num));
-        if (!salaryNumbers.length) {
-            if (salaryChart) {
-                salaryChart.destroy();
-                salaryChart = null; // Clear chart instance
-            }
+        const toK = arr => arr.map(job => job.salary / 1000).filter(num => !isNaN(num));
+        const listedJobs = jobData.filter(job => job.salary !== null && job.salary !== 'null' && !job.is_estimated_salary);
+        const estimatedJobs = jobData.filter(job => job.salary !== null && job.salary !== 'null' && job.is_estimated_salary);
+        const listedK = toK(listedJobs);
+        const estimatedK = toK(estimatedJobs);
+        const allK = [...listedK, ...estimatedK];
+
+        if (!allK.length) {
+            if (salaryChart) { salaryChart.destroy(); salaryChart = null; }
             return;
         }
-    
-        const maxSalary = Math.max(...salaryNumbers);
-        const minSalary = 0;
-        const binCount = Math.max(10, Math.min(salaryNumbers.length, 30));
-        const binSize = (maxSalary - minSalary) / binCount;
-        const bins = Array.from({ length: binCount + 1 }, (_, i) => minSalary + i * binSize);
-        bins[bins.length - 1] = maxSalary; // Ensure the last bin includes max salary
-    
-        const histogramData = new Array(binCount).fill(0);
-        salaryNumbers.forEach(salary => {
-            for (let i = 0; i < bins.length - 1; i++) {
-                if (salary >= bins[i] && (i === bins.length - 2 ? salary <= bins[i + 1] : salary < bins[i + 1])) {
-                    histogramData[i]++;
-                    return;
+
+        const maxSalary = Math.max(...allK);
+        const binCount = Math.max(10, Math.min(allK.length, 30));
+        const binSize = maxSalary / binCount;
+        const bins = Array.from({ length: binCount + 1 }, (_, i) => i * binSize);
+        bins[bins.length - 1] = maxSalary;
+
+        const makeBins = (salaries) => {
+            const data = new Array(binCount).fill(0);
+            salaries.forEach(salary => {
+                for (let i = 0; i < bins.length - 1; i++) {
+                    if (salary >= bins[i] && (i === bins.length - 2 ? salary <= bins[i + 1] : salary < bins[i + 1])) {
+                        data[i]++;
+                        return;
+                    }
                 }
-            }
-        });
-    
+            });
+            return data;
+        };
+
+        const listedData = makeBins(listedK);
+        const estimatedData = makeBins(estimatedK);
         const labels = bins.slice(0, -1).map((bin, i) =>
-            `${bin.toFixed(0)}k - ${bins[i + 1].toFixed(0)}k`
+            `${bin.toFixed(0)}k – ${bins[i + 1].toFixed(0)}k`
         );
-    
-        // Create or update the chart
+
         if (!salaryChart) {
             const ctx = document.getElementById('salaryHistogram').getContext('2d');
             salaryChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels,
-                    datasets: [{
-                        label: 'Number of Jobs',
-                        data: histogramData,
-                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        borderWidth: 1
-                    }]
+                    datasets: [
+                        {
+                            label: 'Listed',
+                            data: listedData,
+                            backgroundColor: 'rgba(45, 212, 191, 0.65)',
+                            borderColor: 'rgba(45, 212, 191, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Estimated',
+                            data: estimatedData,
+                            backgroundColor: 'rgba(251, 191, 36, 0.55)',
+                            borderColor: 'rgba(251, 191, 36, 0.9)',
+                            borderWidth: 1
+                        }
+                    ]
                 },
                 options: {
                     scales: {
                         x: {
+                            stacked: true,
                             beginAtZero: true,
                             grid: { color: 'rgba(255, 255, 255, 0.1)' },
                             ticks: { color: '#e0e0e0' },
                             title: { display: true, text: 'Salary Range', color: '#e0e0e0' }
                         },
                         y: {
+                            stacked: true,
                             beginAtZero: true,
                             grid: { color: 'rgba(255, 255, 255, 0.1)' },
                             ticks: { color: '#e0e0e0' },
@@ -321,50 +358,26 @@ document.addEventListener("DOMContentLoaded", () => {
                         }
                     },
                     plugins: {
-                        legend: { display: false },
+                        legend: {
+                            display: true,
+                            labels: { color: '#e0e0e0', usePointStyle: true }
+                        },
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
-                                    return `Jobs: ${context.raw}`;
+                                    return `${context.dataset.label}: ${context.raw}`;
                                 }
                             }
-                        },
-                        datalabels: {
-                            anchor: 'end',
-                            align: 'top',
-                            font: {
-                                size: 10,
-                                weight: 'bold'
-                            },
-                            color: '#e0e0e0'
                         }
                     },
                     responsive: true,
                     maintainAspectRatio: false
-                },
-                plugins: [{
-                    id: 'customDataLabels',
-                    afterDatasetsDraw(chart) {
-                        const { ctx } = chart;
-                        chart.data.datasets.forEach((dataset, i) => {
-                            const meta = chart.getDatasetMeta(i);
-                            meta.data.forEach((bar, index) => {
-                                const value = dataset.data[index];
-                                if (value > 0) {
-                                    ctx.fillStyle = '#e0e0e0';
-                                    ctx.font = 'bold 10px Inter';
-                                    ctx.textAlign = 'center';
-                                    ctx.textBaseline = 'bottom';
-                                    ctx.fillText(value, bar.x, bar.y - 5);
-                                }
-                            });
-                        });
-                    }
-                }]
+                }
             });
         } else {
             salaryChart.data.labels = labels;
-            salaryChart.data.datasets[0].data = histogramData;
+            salaryChart.data.datasets[0].data = listedData;
+            salaryChart.data.datasets[1].data = estimatedData;
             salaryChart.update();
         }
     }
@@ -503,6 +516,72 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    function createJobTypeChart(jobData) {
+        const counts = {};
+        jobData.forEach(job => {
+            const t = job.job_type || 'unknown';
+            counts[t] = (counts[t] || 0) + 1;
+        });
+        const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+        const labels = sorted.map(([k]) => k);
+        const data = sorted.map(([, v]) => v);
+        const palette = [
+            'rgba(45, 212, 191, 0.7)', 'rgba(124, 58, 237, 0.7)',
+            'rgba(251, 191, 36, 0.7)', 'rgba(59, 130, 246, 0.7)',
+            'rgba(239, 68, 68, 0.7)',  'rgba(16, 185, 129, 0.7)',
+            'rgba(245, 158, 11, 0.7)', 'rgba(99, 102, 241, 0.7)'
+        ];
+        const colors = labels.map((_, i) => palette[i % palette.length]);
+
+        if (!jobTypeChart) {
+            const ctx = document.getElementById('jobTypeChart').getContext('2d');
+            jobTypeChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Jobs',
+                        data,
+                        backgroundColor: colors,
+                        borderColor: colors.map(c => c.replace('0.7', '1')),
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            ticks: { color: '#e0e0e0' },
+                            title: { display: true, text: 'Number of Jobs', color: '#e0e0e0' }
+                        },
+                        y: {
+                            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                            ticks: { color: '#e0e0e0' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: ctx => `Jobs: ${ctx.raw}`
+                            }
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        } else {
+            jobTypeChart.data.labels = labels;
+            jobTypeChart.data.datasets[0].data = data;
+            jobTypeChart.data.datasets[0].backgroundColor = colors;
+            jobTypeChart.update();
+        }
+    }
+
+
     function sortTable(columnIndex, toggle = true) {
         if (toggle)
             currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
@@ -597,12 +676,26 @@ document.addEventListener("DOMContentLoaded", () => {
         // Calculate salary stats and update histogram
         calculateSalaryStats(filteredJobs);
         
-        // Update charts only if they are currently displayed
-        if (document.getElementById('salaryHistogram').style.display !== 'none') {
+        // Update active chart
+        if (chartView === 'histogram') {
             createSalaryHistogram(filteredJobs);
-        } else if (document.getElementById('weeklyAverageSalaryChart').style.display !== 'none') {
+        } else if (chartView === 'weekly') {
             createWeeklyAverageSalaryChart(filteredJobs);
+        } else if (chartView === 'jobtype') {
+            createJobTypeChart(filteredJobs);
         }
+
+        // Update arrangement badges
+        const arrangementCounts = {};
+        filteredJobs.forEach(job => {
+            const arr = job.work_arrangement || 'unknown';
+            arrangementCounts[arr] = (arrangementCounts[arr] || 0) + 1;
+        });
+        const badgesDiv = document.getElementById('arrangement-badges');
+        badgesDiv.innerHTML = Object.entries(arrangementCounts)
+            .sort((a, b) => b[1] - a[1])
+            .map(([arr, count]) => `<span class="arr-badge arr-badge-${arr.replace(/\s+/g, '-')}">${arr}: <strong>${count}</strong></span>`)
+            .join('');
 
         // Update job count
         const jobCountElem = document.getElementById('job-count');

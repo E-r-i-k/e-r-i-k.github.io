@@ -26,9 +26,11 @@
         <h1>Seek Software Job Listings</h1>
 
         <div class="card chart-container">
+            <p id="chart-title" class="chart-title">Salary Distribution</p>
             <button id="show-weekly-average-salary-btn">Show Weekly Average Salary</button>
             <canvas id="salaryHistogram" width="400" height="400"></canvas>
             <canvas id="weeklyAverageSalaryChart" width="800" height="400"></canvas>
+            <canvas id="jobTypeChart" width="800" height="400"></canvas>
         </div>
 
         <!-- Salary Statistics Section -->
@@ -37,6 +39,7 @@
             <p>Maximum Salary: <span id="max-salary">N/A</span></p>
             <p>Average Salary: <span id="average-salary">N/A</span></p>
             <p>Median Salary: <span id="median-salary">N/A</span></p>
+            <p>Listed Salaries: <span id="listed-pct">N/A</span></p>
         </div>
 
         <div class="filter-container">
@@ -76,6 +79,9 @@
             <p id="job-count"></p> <!-- New job count display -->
         </div>
         
+        <!-- Work Arrangement Summary -->
+        <div id="arrangement-badges" class="arrangement-badges"></div>
+
         <!-- Job Listings Table -->
         <div class="table-container">
             <table id="job-listings-table">
@@ -85,7 +91,7 @@
                         <th>Company <span class="sort-arrow"></span></th>
                         <th>Location <span class="sort-arrow"></span></th>
                         <th>Salary <span class="sort-arrow"></span></th>
-                        <th>Salary Listed<span class="sort-arrow"></span></th>
+                        <th>Salary Source<span class="sort-arrow"></span></th>
                         <th>Job Type <span class="sort-arrow"></span></th>
                         <th>Experience Level <span class="sort-arrow"></span></th>
                         <th>Employment Type <span class="sort-arrow"></span></th>
